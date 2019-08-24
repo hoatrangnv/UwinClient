@@ -1,0 +1,48 @@
+
+Cao_Thap.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Button
+  rotate: false
+  xy: 2, 186
+  size: 435, 297
+  orig: 435, 297
+  offset: 0, 0
+  index: -1
+Cao
+  rotate: true
+  xy: 2, 2
+  size: 99, 130
+  orig: 99, 130
+  offset: 0, 0
+  index: -1
+Cao_Thap
+  rotate: false
+  xy: 2, 103
+  size: 348, 81
+  orig: 348, 81
+  offset: 0, 0
+  index: -1
+Chip
+  rotate: false
+  xy: 439, 253
+  size: 238, 230
+  orig: 238, 230
+  offset: 0, 0
+  index: -1
+Mask
+  rotate: false
+  xy: 679, 396
+  size: 314, 87
+  orig: 314, 87
+  offset: 0, 0
+  index: -1
+Thap
+  rotate: false
+  xy: 679, 288
+  size: 78, 106
+  orig: 78, 106
+  offset: 0, 0
+  index: -1

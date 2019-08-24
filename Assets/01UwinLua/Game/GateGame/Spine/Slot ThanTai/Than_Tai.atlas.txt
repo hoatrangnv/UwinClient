@@ -1,0 +1,97 @@
+
+Than_Tai.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 2, 117
+  size: 426, 312
+  orig: 426, 312
+  offset: 0, 0
+  index: -1
+Button
+  rotate: false
+  xy: 2, 431
+  size: 495, 583
+  orig: 495, 583
+  offset: 0, 0
+  index: -1
+Coin_1
+  rotate: false
+  xy: 301, 70
+  size: 59, 45
+  orig: 59, 45
+  offset: 0, 0
+  index: -1
+Coin_2
+  rotate: false
+  xy: 499, 580
+  size: 50, 41
+  orig: 50, 41
+  offset: 0, 0
+  index: -1
+Coin_3
+  rotate: false
+  xy: 967, 890
+  size: 19, 22
+  orig: 19, 22
+  offset: 0, 0
+  index: -1
+Coin_4
+  rotate: false
+  xy: 430, 263
+  size: 21, 27
+  orig: 21, 27
+  offset: 0, 0
+  index: -1
+Coin_5
+  rotate: false
+  xy: 598, 727
+  size: 26, 35
+  orig: 26, 35
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 499, 623
+  size: 97, 139
+  orig: 97, 139
+  offset: 0, 0
+  index: -1
+Number copy 2
+  rotate: false
+  xy: 499, 764
+  size: 466, 250
+  orig: 466, 250
+  offset: 0, 0
+  index: -1
+Quai_L
+  rotate: false
+  xy: 2, 2
+  size: 94, 45
+  orig: 94, 45
+  offset: 0, 0
+  index: -1
+Quai_R
+  rotate: true
+  xy: 967, 914
+  size: 100, 44
+  orig: 100, 44
+  offset: 0, 0
+  index: -1
+Rau
+  rotate: false
+  xy: 430, 292
+  size: 47, 137
+  orig: 47, 137
+  offset: 0, 0
+  index: -1
+Than_Tai
+  rotate: false
+  xy: 2, 49
+  size: 297, 66
+  orig: 297, 66
+  offset: 0, 0
+  index: -1

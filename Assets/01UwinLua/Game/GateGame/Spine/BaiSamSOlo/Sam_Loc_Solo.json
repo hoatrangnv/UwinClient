@@ -1,0 +1,105 @@
+{
+"skeleton": { "hash": "MOhO5Bqb1Lv8Bmb9sxN5DKRhedY", "spine": "3.7.91", "width": 435, "height": 297, "images": "./images/", "audio": "E:/job/Casino_01/Anim/Sam_Loc_Solo" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Chip", "parent": "root", "x": 84, "y": 14.84 },
+	{ "name": "Coin", "parent": "root", "length": 121.93, "rotation": 92.67, "x": -83.78, "y": -78.74 },
+	{ "name": "Glow", "parent": "root", "x": -139.81, "y": 101.52 },
+	{ "name": "Glow2", "parent": "root", "x": 171.38, "y": -31.98 }
+],
+"slots": [
+	{ "name": "Layer 53", "bone": "root", "attachment": "Layer 53" },
+	{ "name": "Chip", "bone": "Chip", "attachment": "Chip" },
+	{ "name": "Coin", "bone": "Coin", "attachment": "Coin" },
+	{ "name": "Glow", "bone": "Glow", "attachment": "Glow" },
+	{ "name": "Glow2", "bone": "Glow2", "attachment": "Glow" },
+	{ "name": "Mask", "bone": "root", "attachment": "Mask" },
+	{ "name": "Sam_Loc_Solo", "bone": "root", "attachment": "Sam_Loc_Solo" }
+],
+"skins": {
+	"default": {
+		"Chip": {
+			"Chip": { "x": -5.36, "y": 14.47, "width": 234, "height": 225 }
+		},
+		"Coin": {
+			"Coin": { "x": 55.27, "y": -29.03, "rotation": -92.67, "width": 194, "height": 156 }
+		},
+		"Glow": {
+			"Glow": { "x": 2.45, "y": -3.2, "width": 48, "height": 47 }
+		},
+		"Glow2": {
+			"Glow": { "x": 2.45, "y": -3.2, "width": 48, "height": 47 }
+		},
+		"Layer 53": {
+			"Layer 53": { "x": 9.14, "y": -5.68, "width": 435, "height": 297 }
+		},
+		"Mask": {
+			"Mask": { "x": -14.36, "y": -51.68, "width": 326, "height": 139 }
+		},
+		"Sam_Loc_Solo": {
+			"Sam_Loc_Solo": { "x": 25.64, "y": -52.68, "width": 354, "height": 131 }
+		}
+	}
+},
+"animations": {
+	"Sam_Loc_Solo": {
+		"slots": {
+			"Glow": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.5, "color": "ffffff00" },
+					{ "time": 1.6667, "color": "ffffffff" },
+					{ "time": 2.1667, "color": "ffffff00" }
+				]
+			},
+			"Glow2": {
+				"color": [
+					{ "time": 0, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.8333, "color": "ffffff00" },
+					{ "time": 2, "color": "ffffffff" },
+					{ "time": 2.5, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"Chip": {
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1 },
+					{ "time": 0.6667, "x": 0.838, "y": 0.838 },
+					{ "time": 0.8333, "x": 1.1, "y": 1.1 },
+					{ "time": 1, "x": 0.838, "y": 0.838 },
+					{ "time": 1.1, "x": 1.1, "y": 1.1 },
+					{ "time": 1.2, "x": 0.838, "y": 0.838 },
+					{ "time": 1.2667, "x": 1.1, "y": 1.1 },
+					{ "time": 1.3333, "x": 0.838, "y": 0.838 },
+					{ "time": 1.4, "x": 1.1, "y": 1.1 },
+					{ "time": 1.4667, "x": 0, "y": 0 },
+					{ "time": 1.5333, "x": 1.1, "y": 1.1 },
+					{ "time": 1.6, "x": 0.838, "y": 0.838 },
+					{ "time": 1.6667, "x": 1, "y": 1 },
+					{ "time": 2, "x": 0.938, "y": 0.938 },
+					{ "time": 2.6667, "x": 1, "y": 1 }
+				]
+			},
+			"Glow": {
+				"rotate": [
+					{ "time": 1.5, "angle": 0 },
+					{ "time": 1.6667, "angle": -90 },
+					{ "time": 1.8333, "angle": 180 },
+					{ "time": 2, "angle": 90 },
+					{ "time": 2.1667, "angle": 0 }
+				]
+			},
+			"Glow2": {
+				"rotate": [
+					{ "time": 1.8333, "angle": 0 },
+					{ "time": 2, "angle": -90 },
+					{ "time": 2.1667, "angle": 180 },
+					{ "time": 2.3333, "angle": 90 },
+					{ "time": 2.5, "angle": 0 }
+				]
+			}
+		}
+	}
+}
+}

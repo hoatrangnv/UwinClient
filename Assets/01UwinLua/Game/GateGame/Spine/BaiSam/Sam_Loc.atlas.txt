@@ -1,0 +1,48 @@
+
+Sam_Loc.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Button
+  rotate: false
+  xy: 2, 128
+  size: 435, 297
+  orig: 435, 297
+  offset: 0, 0
+  index: -1
+Card
+  rotate: false
+  xy: 439, 188
+  size: 227, 237
+  orig: 227, 237
+  offset: 0, 0
+  index: -1
+Coin
+  rotate: false
+  xy: 668, 180
+  size: 194, 156
+  orig: 194, 156
+  offset: 0, 0
+  index: -1
+Glow
+  rotate: false
+  xy: 2, 2
+  size: 48, 47
+  orig: 48, 47
+  offset: 0, 0
+  index: -1
+Mask
+  rotate: false
+  xy: 668, 338
+  size: 314, 87
+  orig: 314, 87
+  offset: 0, 0
+  index: -1
+Xiu
+  rotate: false
+  xy: 2, 51
+  size: 333, 75
+  orig: 333, 75
+  offset: 0, 0
+  index: -1

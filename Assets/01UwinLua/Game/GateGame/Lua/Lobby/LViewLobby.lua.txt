@@ -60,6 +60,7 @@ local IndexSourceGate =
     LHistory = 9,
     LGiftCode = 10,
     LForgetPass = 11,
+	LVipPoint = 12,
 }
 
 local objHeadPrepareLogin
@@ -97,6 +98,7 @@ local spriteOnMusic
 local spriteOffMusic
 
 --Mene Bottom
+local btVipPoint
 local btGiftCode
 local btFanpage
 local btHotline
@@ -204,6 +206,7 @@ function LoadObjectGame()
     spriteOffMusic = _spriteOffMusic
 
     -- Menu Bottom
+	btVipPoint = _btVipPoint:GetComponent(typeof(CS.UnityEngine.UI.Button))
     btGiftCode = _btGiftCode:GetComponent(typeof(CS.UnityEngine.UI.Button))
     btFanpage = _btFanpage:GetComponent(typeof(CS.UnityEngine.UI.Button))
     btHotline = _btHotline:GetComponent(typeof(CS.UnityEngine.UI.Button))
@@ -266,6 +269,7 @@ function AddEvent()
     btSetting.onClick:AddListener(ClickBtSetting);
 
     btFanpage.onClick:AddListener(ClickBtFanpage);
+	btVipPoint.onClick:AddListener(ClickBtVipPoint);
     btGiftCode.onClick:AddListener(ClickBtGift);
     btHotline.onClick:AddListener(ClickBtHotline);
     btMail.onClick:AddListener(ClickBtMail);
@@ -412,6 +416,16 @@ function  ClickBtMusic()
     CS.AudioAssistant.Instance:Shot(CS.StringHelper.SOUND_GATE_BT)
 end
     
+function ClickBtVipPoint()
+    CS.AudioAssistant.Instance:Shot(CS.StringHelper.SOUND_GATE_BT);
+    if (CS.Database.Instance.islogin == false) then
+        CS.LPopup.OpenPopup("Thông báo!", "Chức năng này cần đăng nhập mới sử dụng được")
+        return
+    end
+
+    CS.UILayerController.Instance:ShowLayer(UILayerKey.LVipPoint, dataResourceLobby.listObjLayer[CS.IndexSourceGate.LVipPoint]);
+end
+
 function ClickBtOffSetting()
     ObjAllSetting:SetActive(false);
     btOffSetting.gameObject:SetActive(false);

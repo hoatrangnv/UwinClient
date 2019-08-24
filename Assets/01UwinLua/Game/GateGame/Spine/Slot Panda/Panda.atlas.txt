@@ -1,0 +1,111 @@
+
+Panda.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 2, 26
+  size: 350, 409
+  orig: 350, 409
+  offset: 0, 0
+  index: -1
+Button
+  rotate: false
+  xy: 2, 437
+  size: 494, 583
+  orig: 494, 583
+  offset: 0, 0
+  index: -1
+Ear_L
+  rotate: false
+  xy: 919, 916
+  size: 35, 33
+  orig: 35, 33
+  offset: 0, 0
+  index: -1
+Ear_R
+  rotate: true
+  xy: 354, 26
+  size: 30, 33
+  orig: 30, 33
+  offset: 0, 0
+  index: -1
+Eyes_Close_L
+  rotate: false
+  xy: 991, 959
+  size: 31, 29
+  orig: 31, 29
+  offset: 0, 0
+  index: -1
+Eyes_Close_L copy
+  rotate: true
+  xy: 991, 990
+  size: 30, 31
+  orig: 30, 31
+  offset: 0, 0
+  index: -1
+Eyes_In_L
+  rotate: false
+  xy: 420, 92
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+Eyes_In_R
+  rotate: false
+  xy: 2, 2
+  size: 13, 22
+  orig: 13, 22
+  offset: 0, 0
+  index: -1
+Eyes_L
+  rotate: false
+  xy: 354, 58
+  size: 64, 47
+  orig: 64, 47
+  offset: 0, 0
+  index: -1
+Eyes_R
+  rotate: false
+  xy: 498, 514
+  size: 43, 60
+  orig: 43, 60
+  offset: 0, 0
+  index: -1
+Face
+  rotate: false
+  xy: 498, 576
+  size: 174, 142
+  orig: 174, 142
+  offset: 0, 0
+  index: -1
+KungFu_panda
+  rotate: true
+  xy: 354, 107
+  size: 328, 128
+  orig: 328, 128
+  offset: 0, 0
+  index: -1
+Mask
+  rotate: false
+  xy: 498, 720
+  size: 419, 300
+  orig: 419, 300
+  offset: 0, 0
+  index: -1
+Mouth
+  rotate: false
+  xy: 919, 951
+  size: 70, 69
+  orig: 70, 69
+  offset: 0, 0
+  index: -1
+Nose
+  rotate: false
+  xy: 674, 665
+  size: 46, 53
+  orig: 46, 53
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,41 @@
+
+3_Cay.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+3_Cay
+  rotate: false
+  xy: 440, 337
+  size: 280, 76
+  orig: 280, 76
+  offset: 0, 0
+  index: -1
+Butoon
+  rotate: false
+  xy: 2, 205
+  size: 436, 297
+  orig: 436, 297
+  offset: 0, 0
+  index: -1
+Card
+  rotate: false
+  xy: 2, 2
+  size: 276, 201
+  orig: 276, 201
+  offset: 0, 0
+  index: -1
+Chip
+  rotate: false
+  xy: 440, 234
+  size: 206, 101
+  orig: 206, 101
+  offset: 0, 0
+  index: -1
+Mask
+  rotate: false
+  xy: 440, 415
+  size: 314, 87
+  orig: 314, 87
+  offset: 0, 0
+  index: -1

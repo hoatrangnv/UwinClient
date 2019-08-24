@@ -1,0 +1,55 @@
+
+Bau_Cua.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bau_1
+  rotate: false
+  xy: 652, 366
+  size: 104, 104
+  orig: 104, 104
+  offset: 0, 0
+  index: -1
+Bau_2
+  rotate: true
+  xy: 349, 93
+  size: 78, 88
+  orig: 78, 88
+  offset: 0, 0
+  index: -1
+Bau_3
+  rotate: false
+  xy: 439, 196
+  size: 62, 70
+  orig: 62, 70
+  offset: 0, 0
+  index: -1
+Bau_Cua
+  rotate: false
+  xy: 2, 91
+  size: 345, 80
+  orig: 345, 80
+  offset: 0, 0
+  index: -1
+Button
+  rotate: false
+  xy: 2, 173
+  size: 435, 297
+  orig: 435, 297
+  offset: 0, 0
+  index: -1
+Ho_Lo
+  rotate: false
+  xy: 439, 268
+  size: 211, 202
+  orig: 211, 202
+  offset: 0, 0
+  index: -1
+Mask
+  rotate: false
+  xy: 2, 2
+  size: 314, 87
+  orig: 314, 87
+  offset: 0, 0
+  index: -1

@@ -195,7 +195,7 @@ public class EventImagesController : MonoBehaviour
             }
             else
             {
-                Texture2D texture = new Texture2D(1, 1);
+                Texture2D texture = new Texture2D(256 * 2, 440 * 2, TextureFormat.ARGB32, false);
                 www.LoadImageIntoTexture(texture);
                 DownloadSuccess(texture, index);
             }

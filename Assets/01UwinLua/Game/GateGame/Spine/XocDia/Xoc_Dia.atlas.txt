@@ -1,0 +1,62 @@
+
+Xoc_Dia.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bowl
+  rotate: false
+  xy: 439, 261
+  size: 181, 151
+  orig: 181, 151
+  offset: 0, 0
+  index: -1
+Button
+  rotate: false
+  xy: 2, 193
+  size: 435, 297
+  orig: 435, 297
+  offset: 0, 0
+  index: -1
+Hot_1
+  rotate: false
+  xy: 746, 444
+  size: 45, 46
+  orig: 45, 46
+  offset: 0, 0
+  index: -1
+Hot_2
+  rotate: false
+  xy: 318, 151
+  size: 52, 40
+  orig: 52, 40
+  offset: 0, 0
+  index: -1
+Hot_3
+  rotate: false
+  xy: 622, 322
+  size: 91, 90
+  orig: 91, 90
+  offset: 0, 0
+  index: -1
+Mask
+  rotate: false
+  xy: 2, 104
+  size: 314, 87
+  orig: 314, 87
+  offset: 0, 0
+  index: -1
+Plate
+  rotate: false
+  xy: 2, 2
+  size: 215, 100
+  orig: 215, 100
+  offset: 0, 0
+  index: -1
+Xox_Dia
+  rotate: false
+  xy: 439, 414
+  size: 305, 76
+  orig: 305, 76
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,76 @@
+
+Mini_Poker.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bich
+  rotate: false
+  xy: 947, 472
+  size: 31, 35
+  orig: 31, 35
+  offset: 0, 0
+  index: -1
+Bong
+  rotate: false
+  xy: 2, 2
+  size: 138, 87
+  orig: 138, 87
+  offset: 0, 0
+  index: -1
+Button
+  rotate: false
+  xy: 2, 210
+  size: 435, 297
+  orig: 435, 297
+  offset: 0, 0
+  index: -1
+Can_gat
+  rotate: false
+  xy: 362, 119
+  size: 47, 89
+  orig: 47, 89
+  offset: 0, 0
+  index: -1
+Mask
+  rotate: false
+  xy: 439, 383
+  size: 322, 124
+  orig: 322, 124
+  offset: 0, 0
+  index: -1
+Mini
+  rotate: false
+  xy: 2, 91
+  size: 358, 117
+  orig: 358, 117
+  offset: 0, 0
+  index: -1
+Queen
+  rotate: false
+  xy: 763, 364
+  size: 182, 143
+  orig: 182, 143
+  offset: 0, 0
+  index: -1
+Spin
+  rotate: false
+  xy: 439, 217
+  size: 257, 164
+  orig: 257, 164
+  offset: 0, 0
+  index: -1
+TIm
+  rotate: false
+  xy: 142, 61
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+Tim_Den
+  rotate: false
+  xy: 698, 350
+  size: 32, 31
+  orig: 32, 31
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,41 @@
+
+TLMN_Solo.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Card
+  rotate: false
+  xy: 453, 215
+  size: 283, 212
+  orig: 283, 212
+  offset: 0, 0
+  index: -1
+Chip
+  rotate: false
+  xy: 738, 237
+  size: 190, 190
+  orig: 190, 190
+  offset: 0, 0
+  index: -1
+Layer 53
+  rotate: false
+  xy: 2, 130
+  size: 449, 297
+  orig: 449, 297
+  offset: 0, 0
+  index: -1
+Mask
+  rotate: false
+  xy: 453, 89
+  size: 322, 124
+  orig: 322, 124
+  offset: 0, 0
+  index: -1
+Xiu
+  rotate: false
+  xy: 2, 2
+  size: 359, 126
+  orig: 359, 126
+  offset: 0, 0
+  index: -1

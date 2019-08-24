@@ -1,0 +1,48 @@
+
+Tam_Quoc.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bg
+  rotate: true
+  xy: 474, 658
+  size: 364, 543
+  orig: 364, 543
+  offset: 0, 0
+  index: -1
+Button
+  rotate: true
+  xy: 2, 43
+  size: 394, 573
+  orig: 394, 573
+  offset: 0, 0
+  index: -1
+Eyes_Close_L
+  rotate: true
+  xy: 2, 19
+  size: 22, 10
+  orig: 22, 10
+  offset: 0, 0
+  index: -1
+Eyes_Close_R
+  rotate: true
+  xy: 2, 2
+  size: 15, 11
+  orig: 15, 11
+  offset: 0, 0
+  index: -1
+Mask
+  rotate: false
+  xy: 2, 439
+  size: 470, 583
+  orig: 470, 583
+  offset: 0, 0
+  index: -1
+Quan_Cong
+  rotate: false
+  xy: 577, 113
+  size: 343, 543
+  orig: 343, 543
+  offset: 0, 0
+  index: -1

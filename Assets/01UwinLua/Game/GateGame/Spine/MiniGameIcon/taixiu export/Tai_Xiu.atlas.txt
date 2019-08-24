@@ -1,0 +1,48 @@
+
+Tai_Xiu.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Button
+  rotate: false
+  xy: 2, 197
+  size: 436, 297
+  orig: 436, 297
+  offset: 0, 0
+  index: -1
+Layer 111 copy
+  rotate: false
+  xy: 2, 90
+  size: 323, 105
+  orig: 323, 105
+  offset: 0, 0
+  index: -1
+Xi_ngau_1
+  rotate: false
+  xy: 615, 275
+  size: 117, 120
+  orig: 117, 120
+  offset: 0, 0
+  index: -1
+Xi_ngau_2
+  rotate: false
+  xy: 440, 226
+  size: 173, 169
+  orig: 173, 169
+  offset: 0, 0
+  index: -1
+Xi_ngau_3
+  rotate: false
+  xy: 2, 2
+  size: 86, 86
+  orig: 86, 86
+  offset: 0, 0
+  index: -1
+Xiu
+  rotate: false
+  xy: 440, 397
+  size: 290, 97
+  orig: 290, 97
+  offset: 0, 0
+  index: -1

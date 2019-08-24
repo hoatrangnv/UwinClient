@@ -1,0 +1,108 @@
+{
+"skeleton": { "hash": "rzyWYAX4pLY8VQCe8geLkDmGBLA", "spine": "3.7.91", "width": 436, "height": 327.76, "images": "./images/", "audio": "E:/job/Casino_01/Anim/Tai_Xiu" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Xi_ngau_1", "parent": "root", "x": 75.97, "y": 92.93 },
+	{ "name": "Xi_ngau_3", "parent": "root", "x": -4.34, "y": 66.6 },
+	{ "name": "Xi_ngau_2", "parent": "root", "x": -104.91, "y": 122.36 }
+],
+"slots": [
+	{ "name": "Button", "bone": "root", "attachment": "Button" },
+	{ "name": "Xi_ngau_3", "bone": "Xi_ngau_3", "attachment": "Xi_ngau_3" },
+	{ "name": "Xi_ngau_2", "bone": "Xi_ngau_2", "attachment": "Xi_ngau_2" },
+	{ "name": "Xi_ngau_1", "bone": "Xi_ngau_1", "attachment": "Xi_ngau_1" },
+	{ "name": "Layer 111 copy", "bone": "root", "attachment": "Layer 111 copy" },
+	{ "name": "Xiu", "bone": "root", "attachment": "Xiu" }
+],
+"skins": {
+	"default": {
+		"Button": {
+			"Button": { "x": 1.86, "y": 23.67, "width": 436, "height": 297 }
+		},
+		"Layer 111 copy": {
+			"Layer 111 copy": { "x": -20.64, "y": -54.33, "width": 323, "height": 105 }
+		},
+		"Xi_ngau_1": {
+			"Xi_ngau_1": { "x": 0.39, "y": 0.3, "width": 117, "height": 120 }
+		},
+		"Xi_ngau_2": {
+			"Xi_ngau_2": { "x": 6.27, "y": -3.93, "width": 173, "height": 169 }
+		},
+		"Xi_ngau_3": {
+			"Xi_ngau_3": { "x": 0.21, "y": -1.05, "width": 86, "height": 86 }
+		},
+		"Xiu": {
+			"Xiu": { "x": 5.86, "y": -53.33, "width": 290, "height": 97 }
+		}
+	}
+},
+"animations": {
+	"Tai_Xiu": {
+		"bones": {
+			"Xi_ngau_2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 14.76,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.1667,
+						"x": 0,
+						"y": -16.87,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.3333, "x": 0, "y": 14.76 }
+				]
+			},
+			"Xi_ngau_1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -6.56,
+						"curve": [ 0.38, 0.53, 0.745, 1 ]
+					},
+					{
+						"time": 0.5,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.6667,
+						"x": 0,
+						"y": -16.17,
+						"curve": [ 0.246, 0, 0.633, 0.54 ]
+					},
+					{ "time": 2.3333, "x": 0, "y": -6.56 }
+				]
+			},
+			"Xi_ngau_3": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -5.52,
+						"curve": [ 0.381, 0.59, 0.729, 1 ]
+					},
+					{
+						"time": 0.3333,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.5,
+						"x": 0,
+						"y": -24.61,
+						"curve": [ 0.243, 0, 0.658, 0.64 ]
+					},
+					{ "time": 2.3333, "x": 0, "y": -5.52 }
+				]
+			}
+		}
+	}
+}
+}

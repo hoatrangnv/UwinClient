@@ -1,0 +1,41 @@
+
+TLMN.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Button
+  rotate: false
+  xy: 2, 91
+  size: 436, 297
+  orig: 436, 297
+  offset: 0, 0
+  index: -1
+Chip
+  rotate: false
+  xy: 668, 186
+  size: 154, 121
+  orig: 154, 121
+  offset: 0, 0
+  index: -1
+Cup
+  rotate: false
+  xy: 440, 149
+  size: 226, 239
+  orig: 226, 239
+  offset: 0, 0
+  index: -1
+Mask
+  rotate: false
+  xy: 2, 2
+  size: 314, 87
+  orig: 314, 87
+  offset: 0, 0
+  index: -1
+Tien_Len
+  rotate: false
+  xy: 668, 309
+  size: 313, 79
+  orig: 313, 79
+  offset: 0, 0
+  index: -1

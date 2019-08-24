@@ -1,0 +1,48 @@
+
+Sam_Loc_Solo.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Chip
+  rotate: false
+  xy: 439, 115
+  size: 234, 225
+  orig: 234, 225
+  offset: 0, 0
+  index: -1
+Coin
+  rotate: false
+  xy: 767, 325
+  size: 194, 156
+  orig: 194, 156
+  offset: 0, 0
+  index: -1
+Glow
+  rotate: false
+  xy: 2, 2
+  size: 48, 47
+  orig: 48, 47
+  offset: 0, 0
+  index: -1
+Layer 53
+  rotate: false
+  xy: 2, 184
+  size: 435, 297
+  orig: 435, 297
+  offset: 0, 0
+  index: -1
+Mask
+  rotate: false
+  xy: 439, 342
+  size: 326, 139
+  orig: 326, 139
+  offset: 0, 0
+  index: -1
+Sam_Loc_Solo
+  rotate: false
+  xy: 2, 51
+  size: 354, 131
+  orig: 354, 131
+  offset: 0, 0
+  index: -1

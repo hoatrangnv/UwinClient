@@ -136,8 +136,11 @@ function OnWebServiceResponse(code,status,data)
                     ShowNoticeRun(dataBigWinPlayer);
         end    
 	elseif code == CS.WebServiceCode.Code.GetNotification then
+	CS.UnityEngine.Debug.Log(data);
+		if(data == nil) then
 		local dataBigWinPlayer = json.decode(data)
                     ShowNotifycationRun(dataBigWinPlayer);   
+					end
     elseif code == CS.WebServiceCode.Code.GetMailUnreal then
         if (status == CS.WebServiceStatus.Status.OK) then
             local quantityMailUnread = json.decode(data)
@@ -214,7 +217,7 @@ function ShowNoticeRun(listData)
     -- local strShowNotice = "Sử dụng ứng dụng OTP Uwin để lấy mã OTP ổn định và miễn phí!     "
     local strShowNotice = ""
     -- // 0 Tro choi,1 Name , 2 so luong
-    local fomatNotice = "[<color=#80E139>%s</color>] <color=#E1C231>%s</color> vừa thắng <color=#E1C231> %s </color>";
+    local fomatNotice = "[<color=#229fff>%s</color>] <color=#ffffff>%s</color> vừa thắng <color=#fddd06> %s </color>";
 
     for i = 1,#listData do
         if (i == 1) then

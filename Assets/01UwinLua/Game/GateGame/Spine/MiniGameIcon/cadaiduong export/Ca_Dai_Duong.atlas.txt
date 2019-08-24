@@ -1,0 +1,41 @@
+
+Ca_Dai_Duong.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Button
+  rotate: false
+  xy: 2, 148
+  size: 435, 297
+  orig: 435, 297
+  offset: 0, 0
+  index: -1
+Ca_dai_Duong
+  rotate: false
+  xy: 2, 2
+  size: 386, 144
+  orig: 386, 144
+  offset: 0, 0
+  index: -1
+Mask
+  rotate: false
+  xy: 656, 314
+  size: 324, 131
+  orig: 324, 131
+  offset: 0, 0
+  index: -1
+Shark
+  rotate: false
+  xy: 656, 159
+  size: 192, 153
+  orig: 192, 153
+  offset: 0, 0
+  index: -1
+Yellow_Shark
+  rotate: false
+  xy: 439, 151
+  size: 215, 294
+  orig: 215, 294
+  offset: 0, 0
+  index: -1

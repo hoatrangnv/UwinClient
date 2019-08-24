@@ -1,0 +1,117 @@
+{
+"skeleton": { "hash": "+qsVtupSXV1MnGXj1CewNbR8MGs", "spine": "3.7.91", "width": 435, "height": 311, "images": "./images/", "audio": "E:/job/Casino_01/Anim/Cao_Thap" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Chip", "parent": "root", "x": 62.98, "y": 25.51 },
+	{ "name": "Cao", "parent": "root", "x": -118.43, "y": -12.72 },
+	{ "name": "Thap", "parent": "root", "x": -62.47, "y": 122.15 }
+],
+"slots": [
+	{ "name": "Button", "bone": "root", "attachment": "Button" },
+	{ "name": "Chip", "bone": "Chip", "attachment": "Chip" },
+	{ "name": "Thap", "bone": "Thap", "attachment": "Thap" },
+	{ "name": "Cao", "bone": "Cao", "attachment": "Cao" },
+	{ "name": "Mask", "bone": "root", "attachment": "Mask" },
+	{ "name": "Cao_Thap", "bone": "root", "attachment": "Cao_Thap" }
+],
+"skins": {
+	"default": {
+		"Button": {
+			"Button": { "x": 7.44, "y": 8.09, "width": 435, "height": 297 }
+		},
+		"Cao": {
+			"Cao": { "x": -1.13, "y": 1.08, "width": 99, "height": 130 }
+		},
+		"Cao_Thap": {
+			"Cao_Thap": { "x": 27.94, "y": -62.91, "width": 348, "height": 81 }
+		},
+		"Chip": {
+			"Chip": { "x": -2.04, "y": 30.08, "width": 238, "height": 230 }
+		},
+		"Mask": {
+			"Mask": { "x": -10.06, "y": -63.91, "width": 314, "height": 87 }
+		},
+		"Thap": {
+			"Thap": { "x": -0.87, "y": -14.07, "width": 78, "height": 106 }
+		}
+	}
+},
+"animations": {
+	"Cao_Thap": {
+		"bones": {
+			"Cao": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6667,
+						"x": 0,
+						"y": 55.18,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.3333,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2,
+						"x": 0,
+						"y": 55.18,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.6667, "x": 0, "y": 0 }
+				]
+			},
+			"Thap": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6667,
+						"x": 0,
+						"y": -35.75,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.3333,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2,
+						"x": 0,
+						"y": -35.75,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.6667, "x": 0, "y": 0 }
+				]
+			},
+			"Chip": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.768, 0.07, 1, 0.37 ]
+					},
+					{ "time": 1.3333, "x": 0.86, "y": 0.86 },
+					{ "time": 1.4, "x": 1.2, "y": 1.2 },
+					{ "time": 1.4667, "x": 0.86, "y": 0.86 },
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,74 @@
+{
+"skeleton": { "hash": "KkoJefgygCekNhFTt0LBREAiKWE", "spine": "3.7.91", "width": 436, "height": 309, "images": "./images/", "audio": "E:/job/Casino_01/Anim/TLMN" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "Cup", "parent": "root", "length": 195.34, "rotation": 91.14, "x": 96.08, "y": -62.69 },
+	{ "name": "Chip", "parent": "root", "x": -62.02, "y": 11.45 }
+],
+"slots": [
+	{ "name": "Button", "bone": "root", "attachment": "Button" },
+	{ "name": "Cup", "bone": "Cup", "attachment": "Cup" },
+	{ "name": "Chip", "bone": "Chip", "attachment": "Chip" },
+	{ "name": "Mask", "bone": "root", "attachment": "Mask" },
+	{ "name": "Tien_Len", "bone": "root", "attachment": "Tien_Len" }
+],
+"skins": {
+	"default": {
+		"Button": {
+			"Button": { "x": 18.22, "y": 1.38, "width": 436, "height": 297 }
+		},
+		"Chip": {
+			"Chip": { "x": -1.76, "y": 24.34, "width": 154, "height": 121 }
+		},
+		"Cup": {
+			"Cup": { "x": 105.09, "y": -0.22, "rotation": -91.14, "width": 226, "height": 239 }
+		},
+		"Mask": {
+			"Mask": { "x": 0.22, "y": -70.62, "width": 314, "height": 87 }
+		},
+		"Tien_Len": {
+			"Tien_Len": { "x": 29.72, "y": -68.62, "width": 313, "height": 79 }
+		}
+	}
+},
+"animations": {
+	"TLMN": {
+		"bones": {
+			"Cup": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.3333,
+						"x": 0.926,
+						"y": 0.926,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.6667, "x": 1, "y": 1 }
+				]
+			},
+			"Chip": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.3333,
+						"x": 0,
+						"y": -13.82,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.6667, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}
