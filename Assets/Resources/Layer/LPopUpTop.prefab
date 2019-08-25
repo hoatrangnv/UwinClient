@@ -372,7 +372,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f5086d54cd385bd4b96e42cb35769eb7, type: 3}
+    m_Font: {fileID: 12800000, guid: 73247befd85f06940ba068a5bfeba423, type: 3}
     m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
@@ -384,7 +384,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\xE1dsadklasdjasdsjadjkasjkdjkasjkd"
+  m_Text: "Giftcode kh\xF4ng ch\xEDnh x\xE1c h\xE3y ki\u1EC3m tra l\u1EA1i"
 --- !u!114 &114274315457094060
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -728,7 +728,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f5086d54cd385bd4b96e42cb35769eb7, type: 3}
+    m_Font: {fileID: 12800000, guid: 73247befd85f06940ba068a5bfeba423, type: 3}
     m_FontSize: 38
     m_FontStyle: 1
     m_BestFit: 0
