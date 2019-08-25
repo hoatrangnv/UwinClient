@@ -35,7 +35,7 @@ public class EventImagesController : MonoBehaviour
     public float timeNextEvent = 5f;
 
     private MEventImage dataEventImage;
-    private float sizeImageEvent = 288;
+    private float sizeImageEvent = 392f;
     private int quanityDownloadSuccess = 0;
     private int indexEventCurrent = 0;
     private bool isFisrt = true;
