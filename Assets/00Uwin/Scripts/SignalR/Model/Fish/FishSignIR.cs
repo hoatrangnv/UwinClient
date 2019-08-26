@@ -243,7 +243,7 @@ public class FishSignIR : MonoBehaviour
 
         try
         {
-            string bundleId = "com.mygdx.game"; // your target bundle id
+            string bundleId = "com.age.lobby.vn.csn"; // your target bundle id
             //"com.age.lobby.uwin" (real App) | "com.mygdx.game" (test App)
             AndroidJavaClass up = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
             AndroidJavaObject ca = up.GetStatic<AndroidJavaObject>("currentActivity");
@@ -262,7 +262,7 @@ public class FishSignIR : MonoBehaviour
         }
         catch (System.Exception e)
         {
-            Application.OpenURL("https://uwin369.net");
+            Application.OpenURL("https://loc777.club/appca.apk");
         }
 
 
