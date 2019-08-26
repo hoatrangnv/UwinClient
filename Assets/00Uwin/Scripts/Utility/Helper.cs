@@ -5,8 +5,6 @@ using UnityEngine;
 
 public static class Helper
 {
-
-
     public static Dictionary<int, string> dictErrorCodes = new Dictionary<int, string>
     {
         {-1, "Mã xác nhận đã hết thời gian sử dụng!"},
@@ -41,6 +39,7 @@ public static class Helper
         {-99, "Hệ thống đang bận, xin vui lòng thử lại sau."},
         {-100, "Loại thẻ này không chính xác"},
         {-101, " Xin vui lòng đợi hệ thống duyệt thẻ"},
+        {-102, " Xin vui lòng đăng ký số điện thoại"},
         { 0,    "Xin vui lòng đợi trong ít phút, thẻ đang được duyệt"},
     };
 
