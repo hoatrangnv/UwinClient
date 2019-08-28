@@ -7,12 +7,14 @@ public class SSignInRequest : BaseRequest
     public string username;
     public string password;
     public int device;
+    public string deviceID;
 
     public override void AddData(HTTPRequest request)
     {
         request.AddField("username", username);
         request.AddField("password", password);
         request.AddField("device", device.ToString());
+        request.AddField("deviceID", deviceID);
     }
 
     public override string GetData()
@@ -28,11 +30,13 @@ public class SSignInFacebookRequest : BaseRequest
 {
     public string accessToken;
     public int device;
+    public string deviceID;
 
     public override void AddData(HTTPRequest request)
     {
         request.AddField("accessToken", accessToken);
         request.AddField("device", device.ToString());
+        request.AddField("deviceID", deviceID);
     }
 
     public override string GetData()
@@ -50,6 +54,7 @@ public class SSignUpRequest : BaseRequest
     public string captcha;
     public string token;
     public int device;
+    public string deviceID;
 
     public override void AddData(HTTPRequest request)
     {
@@ -58,6 +63,7 @@ public class SSignUpRequest : BaseRequest
         request.AddField("captcha", captcha);
         request.AddField("token", token);
         request.AddField("device", device.ToString());
+        request.AddField("deviceID", deviceID);
     }
 
     public override string GetData()
@@ -95,11 +101,13 @@ public class SLoginOTP : BaseRequest
 {
     public string otp;
     public string token;
+    public string deviceID;
 
     public override void AddData(HTTPRequest request)
     {
         request.AddField("otp", otp);
         request.AddField("tokenOTP", token);
+        request.AddField("deviceID", deviceID);
     }
 
     public override string GetData()

@@ -15,8 +15,9 @@ public class SendRequest
         {
             username = username,
             password = password,
-            device = VKCommon.DeviceId()
-        };
+            device = VKCommon.DeviceId(),
+            deviceID = UnityEngine.SystemInfo.deviceUniqueIdentifier
+    };
 
         WebServiceController.Instance.SendRequest(WebServiceCode.Code.SignIn, data, HTTPMethods.Post);
     }
@@ -26,7 +27,8 @@ public class SendRequest
         SSignInFacebookRequest data = new SSignInFacebookRequest
         {
             accessToken = accessToken,
-            device = VKCommon.DeviceId()
+            device = VKCommon.DeviceId(),
+            deviceID = UnityEngine.SystemInfo.deviceUniqueIdentifier
         };
 
         WebServiceController.Instance.SendRequest(WebServiceCode.Code.SignInFacebook, data, HTTPMethods.Post);
@@ -46,7 +48,8 @@ public class SendRequest
             password = password,
             captcha = captcha,
             token = token,
-            device = VKCommon.DeviceId()
+            device = VKCommon.DeviceId(),
+            deviceID = UnityEngine.SystemInfo.deviceUniqueIdentifier
         };
 
         WebServiceController.Instance.SendRequest(WebServiceCode.Code.SignUp, data, HTTPMethods.Post);
@@ -84,6 +87,7 @@ public class SendRequest
         {
             otp = otp,
             token = token,
+            deviceID = UnityEngine.SystemInfo.deviceUniqueIdentifier
         };
 
         WebServiceController.Instance.SendRequest(WebServiceCode.Code.LoginOTP, data, HTTPMethods.Post);

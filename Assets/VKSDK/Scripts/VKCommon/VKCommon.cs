@@ -240,6 +240,11 @@ public class VKCommon
 #endif
     }
 
+    public static string deviceIDFromUnity()
+    {
+        return SystemInfo.deviceUniqueIdentifier;
+    }
+
     public static string ConvertJsonDatas(string name, string json)
     {
         json = "{" + '"' + name + '"' + ":" + json;

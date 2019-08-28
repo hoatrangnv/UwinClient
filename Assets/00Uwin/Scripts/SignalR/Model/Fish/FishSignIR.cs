@@ -60,7 +60,6 @@ public class FishSignIR : MonoBehaviour
     {
         HTTPMethods httpMethod = HTTPMethods.Get;
 
-
         // request response
         bool isDone = false;
         string responseData = "";
@@ -77,10 +76,7 @@ public class FishSignIR : MonoBehaviour
                         responseData = res.DataAsText;
                         responseStatus = CheckError(responseData);
 
-                        mytoken = responseData.Replace("\"", " ").Trim();
-
-                        OpenApp(mytoken);
-                        //StartCoroutine(GetInfoToken());
+                        OpenApp(responseData);
                     }
                     else
                     {
@@ -235,24 +231,20 @@ public class FishSignIR : MonoBehaviour
         return WebServiceStatus.Status.OK;
     }
 
-
     private void OpenApp(string token)
     {
-
+        Debug.LogError("token: " + token);
 #if UNITY_ANDROID
 
         try
         {
-            string bundleId = "com.age.lobby.vn.csn"; // your target bundle id
-            //"com.age.lobby.uwin" (real App) | "com.mygdx.game" (test App)
+            string bundleId = "com.age.uwin";
             AndroidJavaClass up = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
             AndroidJavaObject ca = up.GetStatic<AndroidJavaObject>("currentActivity");
             AndroidJavaObject packageManager = ca.Call<AndroidJavaObject>("getPackageManager");
             AndroidJavaObject launchIntent = packageManager.Call<AndroidJavaObject>("getLaunchIntentForPackage", bundleId);
 
-            string tokenData = "{\"key\":\"e9FGIshMpIJT7N8NPoah\", \"token\":\"" + token + "\"}";
-            launchIntent.Call<AndroidJavaObject>("putExtra", "message", tokenData);
-
+            launchIntent.Call<AndroidJavaObject>("putExtra", "message", token);
             ca.Call("startActivity", launchIntent);
 
             up.Dispose();

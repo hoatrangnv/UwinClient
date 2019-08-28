@@ -17,7 +17,7 @@ PlayerSettings:
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
-  m_ShowUnitySplashScreen: 1
+  m_ShowUnitySplashScreen: 0
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
@@ -158,7 +158,7 @@ PlayerSettings:
   AndroidBundleVersionCode: 6
   AndroidMinSdkVersion: 21
   AndroidTargetSdkVersion: 0
-  AndroidPreferredInstallLocation: 1
+  AndroidPreferredInstallLocation: 0
   aotOptions: 
   stripEngineCode: 1
   iPhoneStrippingLevel: 0
@@ -242,8 +242,8 @@ PlayerSettings:
   templateDefaultScene: Assets/Scenes/SampleScene.unity
   AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 0
-  androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: uwin2019.5.16.keystore
+  androidSplashScreen: {fileID: 2800000, guid: 0238deacdb9abda4db271c4993bf8bb6, type: 3}
+  AndroidKeystoreName: E:/Work/FREELANCE/NEW_JOB/UwinClient/uwin2019.5.16.keystore
   AndroidKeyaliasName: uwin2019.5.16
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
