@@ -233,9 +233,7 @@ public class FishSignIR : MonoBehaviour
 
     private void OpenApp(string token)
     {
-        Debug.LogError("token: " + token);
 #if UNITY_ANDROID
-
         try
         {
             string bundleId = "com.age.uwin";
@@ -256,8 +254,6 @@ public class FishSignIR : MonoBehaviour
         {
             Application.OpenURL("https://loc777.club/appca.apk");
         }
-
-
 
 #elif UNITY_IPHONE
         try
