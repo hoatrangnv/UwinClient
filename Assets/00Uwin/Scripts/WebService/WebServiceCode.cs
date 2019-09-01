@@ -122,6 +122,9 @@ public class WebServiceCode {
         OtherRequest,
         GetTokenAuthen,
         GetNotification,
+
+        //Fishing
+        SendFishingMoney,
     }
 
 }

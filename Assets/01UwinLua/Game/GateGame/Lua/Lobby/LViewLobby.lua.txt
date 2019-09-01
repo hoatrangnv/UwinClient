@@ -60,7 +60,8 @@ local IndexSourceGate =
     LHistory = 9,
     LGiftCode = 10,
     LForgetPass = 11,
-	LVipPoint = 12,
+	LFishingGame = 12,
+	LFInfo = 13
 }
 
 local objHeadPrepareLogin
@@ -443,7 +444,7 @@ function ClickBtGift()
 
     CS.UILayerController.Instance:ShowLayer(UILayerKey.LGiftCode, dataResourceLobby.listObjLayer[CS.IndexSourceGate.LGiftCode]);
 end
-    
+
 function ClickBtFanpage()
     CS.AudioAssistant.Instance:Shot(CS.StringHelper.SOUND_GATE_BT);
     CS.UnityEngine.Application.OpenURL(linkFanpage);

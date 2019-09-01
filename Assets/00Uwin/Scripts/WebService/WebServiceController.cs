@@ -108,6 +108,12 @@ public class WebServiceController : MonoBehaviour
         // 1 is post, else get
         StartCoroutine(ISendRequestOther(code, url, datas, method));
     }
+
+
+    public void SendRequestCodeCallBack( string url, Dictionary<string, string> datas, int method, Action<string> callback)
+    {
+        StartCoroutine(ISendRequestCallBack(url, datas, method, callback));
+    }
     #endregion
 
     #region WebRequest BEST HTTP
@@ -298,6 +304,74 @@ public class WebServiceController : MonoBehaviour
 
         yield return new WaitUntil(() => isDone);
         RaiseWebServiceResponseCodeString(code, responseStatus, responseData);
+    }
+
+
+
+    IEnumerator ISendRequestCallBack(string url, Dictionary<string, string> datas, int method, Action<string> callback)
+    {
+        HTTPMethods httpMethod = method == 0 ? HTTPMethods.Get : HTTPMethods.Post;
+
+        // request response
+        bool isDone = false;
+        string responseData = "";
+        WebServiceStatus.Status responseStatus = WebServiceStatus.Status.INTERNET_ERROR;
+
+        VKDebug.Log("Send Url: " + url, VKCommon.HEX_ORANGE);
+        var request = new HTTPRequest(new Uri(url), httpMethod, (req, res) =>
+        {
+            switch (req.State)
+            {
+                case HTTPRequestStates.Finished:
+                    if (res.StatusCode == 200) // 200 is ok
+                    {
+                        responseData = res.DataAsText;
+                        responseStatus = CheckError(responseData);
+
+                        callback.Invoke(responseData);
+                    }
+                    else
+                    {
+                        responseStatus = WebServiceStatus.Status.ERROR;
+                    }
+                    break;
+                case HTTPRequestStates.ConnectionTimedOut:
+                case HTTPRequestStates.TimedOut:
+                    responseStatus = WebServiceStatus.Status.INTERNET_ERROR;
+                    UILayerController.Instance.HideLoading();
+                    break;
+                default:
+                    responseStatus = WebServiceStatus.Status.ERROR;
+                    break;
+            }
+
+            isDone = true;
+        });
+
+        // add data post
+        request.AddHeader("Content-Type", "application/json");
+        if (httpMethod == HTTPMethods.Post && datas != null && datas.Count > 0)
+        {
+            foreach (var item in datas)
+            {
+                request.AddField(item.Key, item.Value);
+            }
+        }
+
+#if !BESTHTTP_DISABLE_COOKIES && (!UNITY_WEBGL || UNITY_EDITOR)
+        // add header and cookie
+        request.IsCookiesEnabled = true;
+        if (_gvar != null)
+        {
+            request.Cookies = _gvar.Cookies;
+        }
+#endif
+        request.Timeout = new TimeSpan(0, 0, TIME_OUT);
+        request.Send();
+
+        yield return new WaitUntil(() => isDone);
+
+        Debug.Log("Request Done");
     }
 
     // Check bị mất token bắt đăng nhập lại
@@ -583,6 +657,9 @@ public class WebServiceController : MonoBehaviour
                 return urlApiCustom + "api/History/GetSystemNotify";
             case WebServiceCode.Code.GetSlot25LineTop2Jackpot:
                 return urlApiCustom + "api/History/GetTop2Jackpot";
+
+            case WebServiceCode.Code.SendFishingMoney:
+                return urlApiPortal + "/Account/TransferMoney";
         }
 
         return urlApiPortal;

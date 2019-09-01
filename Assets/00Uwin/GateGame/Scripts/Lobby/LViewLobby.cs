@@ -46,6 +46,7 @@ public class LViewLobby : UILayer
     public Button btFanpage;
     public Button btHotline;
     public Button btMail;
+
     public GameObject objNoticeMail;
     public Text txtNoticeMail;
 

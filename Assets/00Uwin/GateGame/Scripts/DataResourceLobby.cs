@@ -16,6 +16,8 @@ public static class IndexSourceGate
     public static int LHistory = 9;
     public static int LGiftCode = 10;
     public static int LForgetPass = 11;
+    public static int LFishingGame = 12;
+    public static int LFInfo = 13;
 }
 
 public class DataResourceLobby : MonoBehaviour
@@ -42,6 +44,4 @@ public class DataResourceLobby : MonoBehaviour
         instance = this;
         isInit = true;
     }
-
-
 }

@@ -418,6 +418,29 @@ public class SGiftCode : BaseRequest
 
 #endregion
 
+#region FishingGame
+public class SFishingMoney : BaseRequest
+{
+    public string amount;
+    public string captcha;
+    public string token;
+
+
+    public override void AddData(HTTPRequest request)
+    {
+        request.AddField("amount", amount);
+        request.AddField("captcha", captcha);
+        request.AddField("token", token);
+
+    }
+
+    public override string GetData()
+    {
+        return "";
+    }
+}
+#endregion
+
 #region Mail
 
 public class SReadMail : BaseRequest

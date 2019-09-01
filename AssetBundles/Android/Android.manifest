@@ -1,0 +1,83 @@
+ManifestFileVersion: 0
+CRC: 2043831439
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: main-xlua.bundle
+      Dependencies:
+        Dependency_0: common.bundle
+        Dependency_1: gate.bundle
+    Info_1:
+      Name: common.bundle
+      Dependencies: {}
+    Info_2:
+      Name: bacay.bundle
+      Dependencies:
+        Dependency_0: common.bundle
+    Info_3:
+      Name: vuabao.bundle
+      Dependencies:
+        Dependency_0: common.bundle
+        Dependency_1: taixiu.bundle
+    Info_4:
+      Name: haivuong.bundle
+      Dependencies:
+        Dependency_0: common.bundle
+    Info_5:
+      Name: slotmafia.bundle
+      Dependencies:
+        Dependency_0: common.bundle
+    Info_6:
+      Name: baucua.bundle
+      Dependencies:
+        Dependency_0: common.bundle
+        Dependency_1: taixiu.bundle
+    Info_7:
+      Name: gate.bundle
+      Dependencies:
+        Dependency_0: common.bundle
+    Info_8:
+      Name: highlow.bundle
+      Dependencies:
+        Dependency_0: common.bundle
+    Info_9:
+      Name: taixiu.bundle
+      Dependencies:
+        Dependency_0: common.bundle
+    Info_10:
+      Name: sam.bundle
+      Dependencies:
+        Dependency_0: common.bundle
+    Info_11:
+      Name: luckyspin.bundle
+      Dependencies:
+        Dependency_0: common.bundle
+    Info_12:
+      Name: slotnongtrai.bundle
+      Dependencies:
+        Dependency_0: common.bundle
+    Info_13:
+      Name: minipoker.bundle
+      Dependencies:
+        Dependency_0: common.bundle
+    Info_14:
+      Name: tlmn.bundle
+      Dependencies:
+        Dependency_0: common.bundle
+    Info_15:
+      Name: xocxoc.bundle
+      Dependencies:
+        Dependency_0: common.bundle
+    Info_16:
+      Name: minipoker-lua.bundle
+      Dependencies:
+        Dependency_0: common.bundle
+    Info_17:
+      Name: commongame.bundle
+      Dependencies: {}
+    Info_18:
+      Name: pl.bundle
+      Dependencies: {}
+    Info_19:
+      Name: xlua.bundle
+      Dependencies: {}

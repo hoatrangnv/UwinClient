@@ -22,7 +22,6 @@ local UILayerKey =
 
     LMail = "LMail",
     LHistory = "LHistory",
-
     LGiftCode = "LGiftCode",
 
     -- Game
@@ -32,6 +31,9 @@ local UILayerKey =
     LGameSlot20LinePopup = "LGameSlot20LinePopup",
     LGameSlot20LineBonus = "LGameSlot20LineBonus",
     LGameSlot20LineStatistic = "LGameSlot20LineStatistic",
+
+	LFishingGame = "LFishingGame",
+	LFInfo = "LFInfo",
 
     LGameMiniPoker = "LGameMiniPoker",
     LGameMiniPokerStatistic = "LGameMiniPokerStatistic",

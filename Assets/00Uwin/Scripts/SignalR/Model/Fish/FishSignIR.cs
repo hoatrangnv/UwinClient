@@ -3,19 +3,42 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using BestHTTP;
+using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
 public class FishSignIR : MonoBehaviour
 {
+    #region Sinleton
+    private static FishSignIR instance;
+
+    public static FishSignIR Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = GameObject.FindObjectOfType<FishSignIR>();
+            }
+            return instance;
+        }
+    }
+    #endregion
+
     [SerializeField]
     GameObject elementParent;
+
+    public FAccountResponse fishAccount;
+    private string token;
+    private string bundleID = "com.age.uwin";
+    public GameObject FInfo;
+    public GameObject FSendMoney;
 
     // Use this for initialization
     void Start()
     {
-        if(Application.platform == RuntimePlatform.WebGLPlayer)
+        if (Application.platform == RuntimePlatform.WebGLPlayer)
         {
             // UwinCa not support for WebGL
             if (elementParent != null)
@@ -25,38 +48,30 @@ public class FishSignIR : MonoBehaviour
 
         Button btn = GetComponent<Button>();
         btn.onClick.AddListener(() => OpenGame());
-
     }
 
 
     private void OpenGame()
     {
-        Debug.Log("Open Game fISHHHHHHH");
         if (Database.Instance.islogin)
         {
-            StartCoroutine(ISendRequestOther("", "https://api.uwin369.net//Account/GetTokenAuthen", null, 0));
+            StartCoroutine(ISendRequestOther("1", "https://api.uwin369.net//Account/GetTokenAuthen", null, 0, (responseData) =>
+            {
+                OpenApp(responseData);
+            }));
         }
         else
         {
             NotifyController.Instance.Open("Bạn cần phải đăng nhập để chơi game!", NotifyController.TypeNotify.Error);
         }
-
-
     }
-
-    //IEnumerator GetInfoToken()
-    //{
-    //    yield return mytoken.Length > 0;
-    //    string url = "https://api.uwin369.net/Account/AccessTokenAuthen/?token=" + mytoken;
-    //    StartCoroutine(ISendRequestInfo("", url, null, 0));
-    //}
 
     public HTTPResponse _gvar;
     public static int TIME_OUT = 16;
     private DateTime lastTimeInternetError = DateTime.MinValue;
     private string mytoken = "";
 
-    IEnumerator ISendRequestOther(string code, string url, Dictionary<string, string> datas, int method)
+    IEnumerator ISendRequestOther(string code, string url, Dictionary<string, string> datas, int method, Action<string> callback)
     {
         HTTPMethods httpMethod = HTTPMethods.Get;
 
@@ -76,7 +91,7 @@ public class FishSignIR : MonoBehaviour
                         responseData = res.DataAsText;
                         responseStatus = CheckError(responseData);
 
-                        OpenApp(responseData);
+                        callback.Invoke(responseData);
                     }
                     else
                     {
@@ -122,74 +137,6 @@ public class FishSignIR : MonoBehaviour
         Debug.Log("Request Done");
     }
 
-//    IEnumerator ISendRequestInfo(string code, string url, Dictionary<string, string> datas, int method)
-//    {
-//        HTTPMethods httpMethod = HTTPMethods.Get;
-
-
-//        // request response
-//        bool isDone = false;
-//        string responseData = "";
-//        WebServiceStatus.Status responseStatus = WebServiceStatus.Status.INTERNET_ERROR;
-
-//        VKDebug.Log("Send Url: " + url, VKCommon.HEX_ORANGE);
-//        var request = new HTTPRequest(new Uri(url), httpMethod, (req, res) =>
-//        {
-//            switch (req.State)
-//            {
-//                case HTTPRequestStates.Finished:
-//                    if (res.StatusCode == 200) // 200 is ok
-//                    {
-//                        responseData = res.DataAsText;
-//                        responseStatus = CheckError(responseData);
-
-//                        Debug.Log("GetInfo: " + responseData);
-
-//                    }
-//                    else
-//                    {
-//                        responseStatus = WebServiceStatus.Status.ERROR;
-//                    }
-//                    break;
-//                case HTTPRequestStates.ConnectionTimedOut:
-//                case HTTPRequestStates.TimedOut:
-//                    responseStatus = WebServiceStatus.Status.INTERNET_ERROR;
-//                    UILayerController.Instance.HideLoading();
-//                    break;
-//                default:
-//                    responseStatus = WebServiceStatus.Status.ERROR;
-//                    break;
-//            }
-
-//            isDone = true;
-//        });
-
-//        // add data post
-//        request.AddHeader("Content-Type", "application/json");
-//        if (httpMethod == HTTPMethods.Post && datas != null && datas.Count > 0)
-//        {
-//            foreach (var item in datas)
-//            {
-//                request.AddField(item.Key, item.Value);
-//            }
-//        }
-
-//#if !BESTHTTP_DISABLE_COOKIES && (!UNITY_WEBGL || UNITY_EDITOR)
-//        // add header and cookie
-//        request.IsCookiesEnabled = true;
-//        if (_gvar != null)
-//        {
-//            request.Cookies = _gvar.Cookies;
-//        }
-//#endif
-    //    request.Timeout = new TimeSpan(0, 0, TIME_OUT);
-    //    request.Send();
-
-    //    yield return new WaitUntil(() => isDone);
-
-    //    Debug.Log("Request Done");
-    //}
-
     // Check bị mất token bắt đăng nhập lại
     private WebServiceStatus.Status CheckError(string response)
     {
@@ -231,42 +178,76 @@ public class FishSignIR : MonoBehaviour
         return WebServiceStatus.Status.OK;
     }
 
+    public bool CheckAppInstallation()
+    {
+        bool installed = false;
+        AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        AndroidJavaObject curActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+        AndroidJavaObject packageManager = curActivity.Call<AndroidJavaObject>("getPackageManager");
+
+        AndroidJavaObject launchIntent = null;
+        try
+        {
+            launchIntent = packageManager.Call<AndroidJavaObject>("getLaunchIntentForPackage", bundleID);
+            if (launchIntent == null)
+                installed = false;
+
+            else
+                installed = true;
+        }
+
+        catch (System.Exception e)
+        {
+            installed = false;
+        }
+        return installed;
+    }
+
+    public void RunFishing()
+    {
+        AndroidJavaClass up = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        AndroidJavaObject ca = up.GetStatic<AndroidJavaObject>("currentActivity");
+        AndroidJavaObject packageManager = ca.Call<AndroidJavaObject>("getPackageManager");
+        AndroidJavaObject launchIntent = packageManager.Call<AndroidJavaObject>("getLaunchIntentForPackage", bundleID);
+
+        launchIntent.Call<AndroidJavaObject>("putExtra", "message", token);
+        ca.Call("startActivity", launchIntent);
+
+        up.Dispose();
+        ca.Dispose();
+        packageManager.Dispose();
+        launchIntent.Dispose();
+    }
+
     private void OpenApp(string token)
     {
 #if UNITY_ANDROID
-        try
+        if (CheckAppInstallation())
         {
-            string bundleId = "com.age.uwin";
-            AndroidJavaClass up = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-            AndroidJavaObject ca = up.GetStatic<AndroidJavaObject>("currentActivity");
-            AndroidJavaObject packageManager = ca.Call<AndroidJavaObject>("getPackageManager");
-            AndroidJavaObject launchIntent = packageManager.Call<AndroidJavaObject>("getLaunchIntentForPackage", bundleId);
+            this.token = token;
 
-            launchIntent.Call<AndroidJavaObject>("putExtra", "message", token);
-            ca.Call("startActivity", launchIntent);
-
-            up.Dispose();
-            ca.Dispose();
-            packageManager.Dispose();
-            launchIntent.Dispose();
+            UILayerController.Instance.ShowLoading();
+            StartCoroutine(ISendRequestOther("1", "https://api.uwin369.net//Account/GetFishAccount", null, 0, (res) =>
+            {
+                UILayerController.Instance.HideLoading();
+                fishAccount = JsonConvert.DeserializeObject<FAccountResponse>(res);
+                UILayerController.Instance.ShowLayer(UILayerKey.LFInfo, DataResourceLobby.instance.listObjLayer[(int)IndexSourceGate.LFInfo]);
+            }));
         }
-        catch (System.Exception e)
+        else
         {
             Application.OpenURL("https://loc777.club/appca.apk");
         }
-
 #elif UNITY_IPHONE
         try
         {
-            Application.OpenURL("iOSUwinCa://");
+            Application.OpenURL("com.age.uwin.schemesdefault://uwinca?" + token);
         }
         catch (System.Exception e)
         {
             Debug.LogError(e.InnerException);
             Application.OpenURL("https://uwin369.net/uwinca.html");
         }
-
 #endif
-
     }
 }

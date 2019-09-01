@@ -568,3 +568,30 @@ public class MSpinHistoryDataItem
     }
 }
 #endregion
+
+
+#region Fishing Game
+[System.Serializable]
+public class FAccountResponse
+{
+    //{"returnCode":0,"message":"success","data":{"userid":"201839156","currentBalance":0}}
+    public int returnCode;
+    public string message;
+    public FAccountDetail data;
+}
+[System.Serializable]
+public class FAccountDetail
+{
+    public long userid;
+    public long currentBalance;
+}
+
+[System.Serializable]
+public class FSendMoneyResponse
+{
+    public int code;
+    public string msg;
+    public long currentMoney;
+    public long currentMoneyCa;
+}
+#endregion
