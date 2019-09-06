@@ -152,7 +152,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.uwin.win
     Standalone: com.Rong88.club
-    iOS: com.win369.club
+    iOS: com.loc777.club
   buildNumber:
     iOS: 2
   AndroidBundleVersionCode: 6
@@ -171,7 +171,7 @@ PlayerSettings:
   StripUnusedMeshComponents: 1
   VertexChannelCompressionMask: 4054
   iPhoneSdkVersion: 988
-  iOSTargetOSVersionString: 8.0
+  iOSTargetOSVersionString: 9.0
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 9.0

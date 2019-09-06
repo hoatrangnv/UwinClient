@@ -217,8 +217,6 @@ public class AssetbundlesManager : MonoBehaviour
 
         string url = assetSetting.GetLink() + assetConfig.name;
 
-        Caching.ClearCache();
-
         WWW www = WWW.LoadFromCacheOrDownload(url, Hash128.Parse(assetConfig.hash));
         while (!www.isDone)
         {

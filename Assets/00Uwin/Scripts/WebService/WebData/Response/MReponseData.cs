@@ -587,7 +587,7 @@ public class FAccountDetail
 }
 
 [System.Serializable]
-public class FSendMoneyResponse
+public class FMoneyResponse
 {
     public int code;
     public string msg;

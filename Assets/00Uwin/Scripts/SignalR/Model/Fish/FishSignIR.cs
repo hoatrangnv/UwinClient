@@ -55,9 +55,16 @@ public class FishSignIR : MonoBehaviour
     {
         if (Database.Instance.islogin)
         {
+            UILayerController.Instance.ShowLoading();
+
             StartCoroutine(ISendRequestOther("1", "https://api.uwin369.net//Account/GetTokenAuthen", null, 0, (responseData) =>
             {
-                OpenApp(responseData);
+                StartCoroutine(ISendRequestOther("1", "https://api.uwin369.net//Account/GetFishAccount", null, 0, (res) =>
+                {
+                    UILayerController.Instance.HideLoading();
+                    fishAccount = JsonConvert.DeserializeObject<FAccountResponse>(res);
+                    OpenApp(responseData);
+                }));
             }));
         }
         else
@@ -101,7 +108,9 @@ public class FishSignIR : MonoBehaviour
                 case HTTPRequestStates.ConnectionTimedOut:
                 case HTTPRequestStates.TimedOut:
                     responseStatus = WebServiceStatus.Status.INTERNET_ERROR;
-                    UILayerController.Instance.HideLoading();
+                    LPopup.OpenPopupTop("Thông báo", "Đã xảy ra lỗi vui lòng thử lại!");
+
+                   UILayerController.Instance.HideLoading();
                     break;
                 default:
                     responseStatus = WebServiceStatus.Status.ERROR;
@@ -203,51 +212,64 @@ public class FishSignIR : MonoBehaviour
         return installed;
     }
 
-    public void RunFishing()
+    public void RunFishingAndroid()
     {
-        AndroidJavaClass up = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-        AndroidJavaObject ca = up.GetStatic<AndroidJavaObject>("currentActivity");
-        AndroidJavaObject packageManager = ca.Call<AndroidJavaObject>("getPackageManager");
-        AndroidJavaObject launchIntent = packageManager.Call<AndroidJavaObject>("getLaunchIntentForPackage", bundleID);
+        if (CheckAppInstallation())
+        {
+            AndroidJavaClass up = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+            AndroidJavaObject ca = up.GetStatic<AndroidJavaObject>("currentActivity");
+            AndroidJavaObject packageManager = ca.Call<AndroidJavaObject>("getPackageManager");
+            AndroidJavaObject launchIntent = packageManager.Call<AndroidJavaObject>("getLaunchIntentForPackage", bundleID);
 
-        launchIntent.Call<AndroidJavaObject>("putExtra", "message", token);
-        ca.Call("startActivity", launchIntent);
+            launchIntent.Call<AndroidJavaObject>("putExtra", "message", this.token);
+            ca.Call("startActivity", launchIntent);
 
-        up.Dispose();
-        ca.Dispose();
-        packageManager.Dispose();
-        launchIntent.Dispose();
+            up.Dispose();
+            ca.Dispose();
+            packageManager.Dispose();
+            launchIntent.Dispose();
+        }
+        else
+        {
+            LPopup.OpenPopupTop("Thông báo", "Hãy tải App bắn cá để chơi game!", (value) =>
+            {
+                if (value)
+                {
+                    Application.OpenURL("https://id.uwin369.net/apps/");
+                }
+            }, true);
+        }
+    }
+
+    public void RunFishingIOS()
+    {
+        try
+        {
+            tokenFish tokenFish = JsonConvert.DeserializeObject<tokenFish>(token);
+            Application.OpenURL("com.age.uwin.schemesdefault://uwinca?key=" + tokenFish.key + "&token=" + tokenFish.token);
+        }
+        catch (Exception ex)
+        {
+            LPopup.OpenPopupTop("Thông báo", "Hãy tải app cá để chơi game!", (value) =>
+            {
+                if (value)
+                {
+                    Application.OpenURL("https://id.uwin369.net/apps/");
+                }
+            }, true);
+        }
     }
 
     private void OpenApp(string token)
     {
-#if UNITY_ANDROID
-        if (CheckAppInstallation())
-        {
-            this.token = token;
-
-            UILayerController.Instance.ShowLoading();
-            StartCoroutine(ISendRequestOther("1", "https://api.uwin369.net//Account/GetFishAccount", null, 0, (res) =>
-            {
-                UILayerController.Instance.HideLoading();
-                fishAccount = JsonConvert.DeserializeObject<FAccountResponse>(res);
-                UILayerController.Instance.ShowLayer(UILayerKey.LFInfo, DataResourceLobby.instance.listObjLayer[(int)IndexSourceGate.LFInfo]);
-            }));
-        }
-        else
-        {
-            Application.OpenURL("https://loc777.club/appca.apk");
-        }
-#elif UNITY_IPHONE
-        try
-        {
-            Application.OpenURL("com.age.uwin.schemesdefault://uwinca?" + token);
-        }
-        catch (System.Exception e)
-        {
-            Debug.LogError(e.InnerException);
-            Application.OpenURL("https://uwin369.net/uwinca.html");
-        }
-#endif
+        this.token = token;
+        UILayerController.Instance.ShowLayer(UILayerKey.LFInfo, DataResourceLobby.instance.listObjLayer[(int)IndexSourceGate.LFInfo]);
     }
+}
+
+
+public class tokenFish
+{
+    public string key;
+    public string token;
 }

@@ -317,7 +317,7 @@ public class SendRequest
 
     #region Fishing Game
 
-    public static void SendRequestMoneyFishing(string money, string captcha, string tonken)
+    public static void RequestSendMoney(string money, string captcha, string tonken)
     {
         SFishingMoney data = new SFishingMoney
         {
@@ -327,6 +327,18 @@ public class SendRequest
         };
 
         WebServiceController.Instance.SendRequest(WebServiceCode.Code.SendFishingMoney, data, HTTPMethods.Post);
+    }
+
+    public static void RequestReceiveMoney(string money, string captcha, string tonken)
+    {
+        SFishingMoney data = new SFishingMoney
+        {
+            amount = money,
+            captcha = captcha,
+            token = tonken
+        };
+
+        WebServiceController.Instance.SendRequest(WebServiceCode.Code.ReceiveFishingMoney, data, HTTPMethods.Post);
     }
 
     #endregion

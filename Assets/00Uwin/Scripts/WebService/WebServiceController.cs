@@ -660,6 +660,9 @@ public class WebServiceController : MonoBehaviour
 
             case WebServiceCode.Code.SendFishingMoney:
                 return urlApiPortal + "/Account/TransferMoney";
+
+            case WebServiceCode.Code.ReceiveFishingMoney:
+                return urlApiPortal + "/Account/WithdrawalMoney";
         }
 
         return urlApiPortal;

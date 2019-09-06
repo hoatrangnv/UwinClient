@@ -8,6 +8,7 @@ public class LFInfo : UILayer
     [Space(40)]
     public Button btClose;
     public Button btOpenGame;
+    public Button btReceiveMoney;
     public Button btSendMoney;
 
     public Text curMoney;
@@ -20,6 +21,8 @@ public class LFInfo : UILayer
 
         btClose.onClick.AddListener(ClickBtClose);
         btSendMoney.onClick.AddListener(ClickBtSendMoney);
+        btReceiveMoney.onClick.AddListener(ClickBtReceiveMoney);
+        btOpenGame.onClick.AddListener(ClickBtnOpenGame);
     }
 
     public override void ShowLayer()
@@ -51,14 +54,25 @@ public class LFInfo : UILayer
 
     private void ClickBtSendMoney()
     {
-        UILayerController.Instance.ShowLayer(UILayerKey.LFishingGame,
-            DataResourceLobby.instance.listObjLayer[(int)IndexSourceGate.LFishingGame]);
+        UILayerController.Instance.ShowLayer(UILayerKey.LFSendMoney,
+            DataResourceLobby.instance.listObjLayer[(int)IndexSourceGate.LFSendMoney]);
         Close();
     }
 
     private void ClickBtnOpenGame()
     {
-        FishSignIR.Instance.RunFishing();
+#if UNITY_ANDROID
+        FishSignIR.Instance.RunFishingAndroid();
+#elif UNITY_IOS
+        FishSignIR.Instance.RunFishingIOS();
+#endif
+    }
+
+    private void ClickBtReceiveMoney()
+    {
+        UILayerController.Instance.ShowLayer(UILayerKey.LFReceiveMoney,
+            DataResourceLobby.instance.listObjLayer[(int)IndexSourceGate.LFReceiveMoney]);
+        Close();
     }
 
     #endregion

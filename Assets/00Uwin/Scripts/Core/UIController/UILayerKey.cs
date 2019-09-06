@@ -16,7 +16,8 @@ public static class UILayerKey
     public static string LChangePass = "LChangePass";
     public static string LForgetPass = "LForgetPass";
 
-    public static string LFishingGame = "LFishingGame";
+    public static string LFSendMoney = "LFSendMoney";
+    public static string LFReceiveMoney = "LFReceiveMoney";
     public static string LFInfo = "LFInfo";
 
     // Shop IAP
