@@ -1,0 +1,92 @@
+ManifestFileVersion: 0
+CRC: 496031564
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 302d202fdfb25364d5a8b06255196018
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a5a5d87ae4ad61ce8671bff3e4bb91ab
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8e772b811701eaf4682af86ebb7f5cdd, type: 3}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -405508275, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -2061169968, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1367256648, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f43bdb82aba8937499cff1e4d521b299, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 419939e3ca18a4c4080deec57bca18bd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7c3fd6a47a364854e9b1f0bbfe010366, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 17a7ecb46ad3c344795a1bce607d73bb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 24829f15a7c7a334181d723fdcb35542, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 978f1b27204560f4ba737f1513b32920, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 77c5c0c979a7ba94ab6770707943019f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ee6d8e4b5ba02934f8283e19ce39ac4d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3de581ad1903fbb42bdeb4fd4d30feb0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4bfd97fd941c19648acfdea143c26f34, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 225
+  Script: {instanceID: 0}
+Assets:
+- Assets/00Uwin/ZBundle/GameSam/Layer/LGameSam.prefab
+- Assets/00Uwin/ZBundle/GameSam/Layer/LGameSamLobby.prefab
+Dependencies:
+- E:/Work/FREELANCE/NEW_JOB/UwinClient/AssetBundles/Android/common.bundle

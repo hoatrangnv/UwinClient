@@ -574,7 +574,6 @@ public class MSpinHistoryDataItem
 [System.Serializable]
 public class FAccountResponse
 {
-    //{"returnCode":0,"message":"success","data":{"userid":"201839156","currentBalance":0}}
     public int returnCode;
     public string message;
     public FAccountDetail data;
@@ -593,5 +592,50 @@ public class FMoneyResponse
     public string msg;
     public long currentMoney;
     public long currentMoneyCa;
+}
+#endregion
+
+#region VIP POINT
+
+[Serializable]
+public class barPoint
+{
+    public int textMin;
+    public int textMax;
+    public int valueMin;
+    public int valueMax;
+}
+
+public class ListVippoint
+{
+    public int RewardID;
+    public int Level;
+    public int LevelPoint;
+    public int Status;
+}
+
+public class VipPoint
+{
+    public List<ListVippoint> ListVippoint;
+    public int Vippoint;
+    public string LevelPoint;
+    public int Code;
+}
+
+public class RewardVP
+{
+    public long Balance;
+    public string Msg;
+    public int Code;
+}
+
+public class historyVP
+{
+    public int RewardID;
+    public string RewardName;
+    public int GoldReward;
+    public string ReceiveDate;
+    public int VipPoint;
+    public int LevelPoint;
 }
 #endregion

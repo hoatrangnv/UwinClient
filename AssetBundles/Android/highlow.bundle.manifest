@@ -1,0 +1,99 @@
+ManifestFileVersion: 0
+CRC: 3397103106
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ea33c94c852956b112fb368a28df26d2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: aebc07ec68c2d66a975e4695026a7219
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6a1d11d03ad52354ab11b028d4b5eba3, type: 3}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e0c61ba2c3606584983feb0095c262ba, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a96f31e2216aa084182b29fcb2928e39, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 67b9ef436c29fc94ab310f8d5869a2de, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fbfbe7b4f292f094c8bfc4f5002cb0c6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 17a7ecb46ad3c344795a1bce607d73bb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f059bdc6961bdbc47b61ebaf79c72d5a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 62f687a7e5934a94da33b56fca735e75, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c8f6c12a9b608af419dacfe8fb226fe3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bf9a290b213e03347af41a7b80c2fb9e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ee6d8e4b5ba02934f8283e19ce39ac4d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 41e6917befd38cb41818de9c06bdd27e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b56d19fba1c25474987745779477b131, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4bfd97fd941c19648acfdea143c26f34, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 225
+  Script: {instanceID: 0}
+Assets:
+- Assets/00Uwin/ZBundle/GameHighLow/Layer/LGameHighLowStatistics.prefab
+- Assets/00Uwin/ZBundle/GameHighLow/Layer/LGameHighLowHelp.prefab
+- Assets/00Uwin/ZBundle/GameHighLow/Layer/LGameHighLow.prefab
+Dependencies:
+- E:/Work/FREELANCE/NEW_JOB/UwinClient/AssetBundles/Android/common.bundle

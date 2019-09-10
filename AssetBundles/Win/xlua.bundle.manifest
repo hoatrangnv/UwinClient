@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 959639134
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b2bb70dc710b150a6e063a6c62c84b94
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/XLua/Resources/xlua/util.lua.txt
+Dependencies: []

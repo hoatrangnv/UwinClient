@@ -19,6 +19,7 @@ public static class UILayerKey
     public static string LFSendMoney = "LFSendMoney";
     public static string LFReceiveMoney = "LFReceiveMoney";
     public static string LFInfo = "LFInfo";
+    public static string LVipPoint = "LVipPoint";
 
     // Shop IAP
     public static string LShop = "LShop";

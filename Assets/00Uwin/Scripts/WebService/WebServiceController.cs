@@ -62,6 +62,9 @@ public class WebServiceController : MonoBehaviour
     public delegate void WebServiceResponseDelegate(WebServiceCode.Code code, WebServiceStatus.Status status, string data);
     public event WebServiceResponseDelegate OnWebServiceResponse;
 
+    public delegate void WebServiceResponseStringDelegate(string code, WebServiceStatus.Status status, string data);
+    public event WebServiceResponseStringDelegate OnWebServiceResponseString;
+
     protected void RaiseWebServiceResponse(WebServiceCode.Code code, WebServiceStatus.Status status, string data)
     {
         if (OnWebServiceResponse != null)
@@ -76,6 +79,12 @@ public class WebServiceController : MonoBehaviour
 
     protected void RaiseWebServiceResponseCodeString(string code, WebServiceStatus.Status status, string data)
     {
+        if (OnWebServiceResponseString != null)
+        {
+            OnWebServiceResponseString(code, status, data);
+            VKDebug.Log("Reponse: " + code.ToString() + "  " + data, VKCommon.HEX_ORANGE);
+        }
+
         onWebServiceResponseLuaCodeString.Invoke(code, status, data);
     }
 
@@ -247,15 +256,15 @@ public class WebServiceController : MonoBehaviour
                         responseData = res.DataAsText;
                         responseStatus = CheckError(responseData);
 
-                        switch (code)
-                        {
-                            case "SignUp":
-                            case "SignIn":
-                            case "SignInFacebook":
-                            case "UpdateName":
-                                _gvar = res;
-                                break;
-                        }
+                        //switch (code)
+                        //{
+                        //    case "SignUp":
+                        //    case "SignIn":
+                        //    case "SignInFacebook":
+                        //    case "UpdateName":
+                        //        _gvar = res;
+                        //        break;
+                        //}
                     }
                     else
                     {
@@ -663,6 +672,13 @@ public class WebServiceController : MonoBehaviour
 
             case WebServiceCode.Code.ReceiveFishingMoney:
                 return urlApiPortal + "/Account/WithdrawalMoney";
+
+            case WebServiceCode.Code.GetVipPoint:
+                return urlApiPortal + "/VipPoint/GetVipPoint";
+            case WebServiceCode.Code.GetRewardVP:
+                return urlApiPortal + "VipPoint/ReceiveVipPoint?rewardid=";
+            case WebServiceCode.Code.GetHistoryVP:
+                return urlApiPortal + "/VipPoint/GetVipPointHistory";
         }
 
         return urlApiPortal;

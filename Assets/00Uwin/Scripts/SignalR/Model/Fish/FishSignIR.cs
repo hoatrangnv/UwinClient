@@ -110,7 +110,7 @@ public class FishSignIR : MonoBehaviour
                     responseStatus = WebServiceStatus.Status.INTERNET_ERROR;
                     LPopup.OpenPopupTop("Thông báo", "Đã xảy ra lỗi vui lòng thử lại!");
 
-                   UILayerController.Instance.HideLoading();
+                    UILayerController.Instance.HideLoading();
                     break;
                 default:
                     responseStatus = WebServiceStatus.Status.ERROR;
@@ -241,14 +241,16 @@ public class FishSignIR : MonoBehaviour
         }
     }
 
+#if UNITY_IOS
     public void RunFishingIOS()
     {
-        try
+
+        if (FishIOS.appFishAlreadyInstalled() == 1)
         {
             tokenFish tokenFish = JsonConvert.DeserializeObject<tokenFish>(token);
             Application.OpenURL("com.age.uwin.schemesdefault://uwinca?key=" + tokenFish.key + "&token=" + tokenFish.token);
         }
-        catch (Exception ex)
+        else
         {
             LPopup.OpenPopupTop("Thông báo", "Hãy tải app cá để chơi game!", (value) =>
             {
@@ -259,6 +261,8 @@ public class FishSignIR : MonoBehaviour
             }, true);
         }
     }
+#endif
+
 
     private void OpenApp(string token)
     {

@@ -126,6 +126,9 @@ public class WebServiceCode {
         //Fishing
         SendFishingMoney,
         ReceiveFishingMoney,
+        GetVipPoint,
+        GetRewardVP,
+        GetHistoryVP,
     }
 
 }

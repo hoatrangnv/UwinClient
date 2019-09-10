@@ -18,8 +18,6 @@ public class LHistory : UILayer
     public override void StartLayer()
     {
         base.StartLayer();
-
-        // Init Layout Child
         AddEventTogget();
         btClose.onClick.AddListener(ClickBtClose);
 

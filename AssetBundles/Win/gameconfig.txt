@@ -1,0 +1,106 @@
+{
+  "assetbundle": {
+    "link": "https://files.uwin369.net/u1/pub/",
+    "preload": [
+      {
+        "gid": 0,
+        "name": "main-xlua.bundle",
+        "hash": "02b62ac633b8fafa8334b1edb5d710f0"
+      },
+      {
+        "gid": 0,
+        "name": "gate.bundle",
+        "hash": "e327b15c6b0f28c0d3e863ccc14b247c"
+      },
+      {
+        "gid": 0,
+        "name": "pl.bundle",
+        "hash": "3f6fe99c2b6ced2f6977581177ab3d37"
+      },
+      {
+        "gid": 0,
+        "name": "common.bundle",
+        "hash": "f93e0153314b26863c478beb26294837"
+      },
+      {
+        "gid": 0,
+        "name": "xlua.bundle",
+        "hash": "e9960c2348fb36932b7b1d5b90a56c17"
+      }
+    ],
+    "asset": [
+      {
+        "gid": 1,
+        "name": "slotnongtrai.bundle",
+        "hash": "dd7257623688ab36bcab46fa3a1a539d"
+      },
+      {
+        "gid": 2,
+        "name": "slotmafia.bundle",
+        "hash": "937dd8f65126dbb326f124b33251717d"
+      },
+      {
+        "gid": 3,
+        "name": "haivuong.bundle",
+        "hash": "3f6ca9176b236d13f43f336338c485b6"
+      },
+      {
+        "gid": 8,
+        "name": "minipoker.bundle",
+        "hash": "17c93bcb501bae6a025c316f506f7946"
+      },
+      {
+        "gid": 5,
+        "name": "highlow.bundle",
+        "hash": "5a8132be5c65b67e34cef31bcdebbe8a"
+      },
+      {
+        "gid": 6,
+        "name": "vuabao.bundle",
+        "hash": "b8e6ae6dd7b6db92e3426229ea941aa0"
+      },
+      {
+        "gid": 4,
+        "name": "taixiu.bundle",
+        "hash": "de9847e63e6dcc13ba33a60b10078c09"
+      },
+      {
+        "gid": 9,
+        "name": "baucua.bundle",
+        "hash": "616b1a477fa364361cbd4e5072bd8191"
+      },
+      {
+        "gid": 101,
+        "name": "luckyspin.bundle",
+        "hash": "5c2906cd2e89b369a13bb22750c3610d"
+      },
+      {
+        "gid": 102,
+        "name": "xocxoc.bundle",
+        "hash": "3e055e30b1333f699860a25c14fadd6b"
+      },
+      {
+        "gid": 103,
+        "name": "bacay.bundle",
+        "hash": "349d1e2a8e71c56b939232057d735a67"
+      },
+	  {
+        "gid": 105,
+        "name": "tlmn.bundle",
+        "hash": "265d7cdf213576ccbc3ff9125205c422"
+      },
+	  {
+        "gid": 104,
+        "name": "sam.bundle",
+        "hash": "59b163fb3a26abdbefa39165dd30c81a"
+      }
+    ]
+  }
+  ,
+  "taixiu": {
+    "gameId": 4,
+    "urlApi": "https://files.uwin369.net",
+    "urlServer": "https://files.uwin369.net/signalr/negotiate",
+    "hubName": "luckyDice"
+  }
+}

@@ -62,7 +62,8 @@ local IndexSourceGate =
     LForgetPass = 11,
 	LFSendMoney = 12,
 	LFInfo = 13,
-	LFReceiveMoney = 14
+	LFReceiveMoney = 14,
+	LVipPoint = 15
 }
 
 local objHeadPrepareLogin
@@ -115,7 +116,7 @@ local dataResourceLobby
 
 local lobbyController
 
-local hotLine = "http://www.M.me/Uwin369.conggamesomotvietnam"
+local hotLine = "http://www.M.me/SanChoiHoangGia/"
 local linkFanpage = "https://www.facebook.com/SanChoiHoangGia/"
 
 -- //Sound

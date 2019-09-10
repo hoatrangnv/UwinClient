@@ -107,7 +107,8 @@ public class LGameLuckySpin : UILayer
                 if (status == WebServiceStatus.Status.OK)
                 {
                     mSpinData = JsonUtility.FromJson<MLuckySpinData>(data);
-                    if (Helper.CheckResponseSuccess(mSpinData.Code, false))
+
+                    if (Helper.CheckResponseSuccess(mSpinData.Code, true))
                     {
                         LoadFreeTurn(mSpinData.SpinChance);
 
@@ -118,7 +119,7 @@ public class LGameLuckySpin : UILayer
                             mSpinData.ConvertCoinResult(),
                         });
                     }
-                    else
+                    else/*(mSpinData.Code == 1)*/
                     {
                         gCapcha.SetActive(true);
                         inpCapcha.text = "";
@@ -166,13 +167,15 @@ public class LGameLuckySpin : UILayer
         if (gCapcha.activeSelf)
         {
             SendRequest.SendLuckySpin(urlApi, mCaptchaData.Token, inpCapcha.text);
+            gCapcha.SetActive(false);
         }
         else
         {
-            SendRequest.SendLuckySpin(urlApi, "", "");
+            gCapcha.SetActive(true);
+            inpCapcha.text = "";
+            SendRequest.SendGetCaptchaSpin(urlApiCaptcha);
         }
 
-        gCapcha.SetActive(false);
         btSpin.interactable = false;
     }
 
@@ -229,7 +232,7 @@ public class LGameLuckySpin : UILayer
         {
             if (mapGoldResult.Length > mSpinData.StarResult)
             {
-                txtGoldWin.text =mapGoldResult[mSpinData.StarResult];
+                txtGoldWin.text = mapGoldResult[mSpinData.StarResult];
                 txtGoldWin.gameObject.SetActive(true);
             }
         }

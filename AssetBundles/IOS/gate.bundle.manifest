@@ -1,0 +1,526 @@
+ManifestFileVersion: 0
+CRC: 3428679698
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 34b33b1c967f294c7dc8919b471a567f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9ebed40d0459ba128532f0cdbccda548
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: eef05ea086dc39d409db8773a2a7561c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 55b3b411b8c596d4e96e2a076be0246a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b1da6021f5be80d44b7b2dfc9263f03e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6dbd8481b521f204da4dc1a263f9a2b5, type: 3}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 853051423, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -2095666955, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -405508275, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 575553740, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -146154839, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -2061169968, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1367256648, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 2109663825, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 1741964061, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -405508275, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 575553740, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 1679637790, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -1200242548, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 1367256648, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 1297475563, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 401a1f53826705d40b23731c31f1aed5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ef3d546455e7d334eb88cb5bba9deec4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 17a7ecb46ad3c344795a1bce607d73bb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b98d5d45f91edc443b0ad8960daca4d5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1d418ef5652590c46bb477f4840334fa, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 80f3e1263511f37448c663052af3b9e8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ef69e136de7e86f45af6771f671b2e80, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 47656566c11dff74682dd4ad8cd9211d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1a93a2a631269b24dba7f229a2b191d4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d18ae2d645726424cadbe5a958c4cdcd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3c0b79177bfc55d4b91adeccb61c8a5a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bb6e39c72edb4804d8e04ecd1bdcd611, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9bca7dc711da87d4baf68881e970fce5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 40f305d7be31a3e498d9c5df1b49a003, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a5e04ad7b45835d4f82df27abc64f378, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b0514cc8dc592e547b9ba532119f3ce5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 741034f865369a8468a67ab3fa546509, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8cc3f709dbbd50c469a100c548ee1ad1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ba38e6198f0737a4aacb39ddca35d0c2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ea046049317fc484998195d451d8d3f4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 127f623a8881f404490e935b3975117b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dfa29f4a2b6674245b2f59a8158c4b0a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4ea3496a290ee477186eb8b41484ce33, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d85b887af7e6c3f45a2e2d2920d641bc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9b84f98a51161ef4a915737b2a9d7ba4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f2795f8a2428b0c4ab71e5a11c4e5f4e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d7b142fa9350f324b8ce5a6e0eba4b4f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0666cdfa684909c4b8e56662ebdbb032, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bf9a290b213e03347af41a7b80c2fb9e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7f097e6b92a994f4cab28e312a7ed20e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7b615e8b58cbe434a80c888ae912898e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b164ddabae81dea4780bbf8745193c51, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cc5dbdb06a93f94cb080a3c1f0fcd01, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3796fedbe34ec254e87c41be6baf3dc3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f420d78c2566fe949a7a6dde03d05f12, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 50eff89cdc9f05f4aabae37381b251e4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 519898eccfe405540a17d83cd41125b6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 434dd20dc266d184e8642f4c907fc4bc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9eb9360d310451541ac0d179eddf8605, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b554a38daee026e43a5400c772bf7dba, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4bfd97fd941c19648acfdea143c26f34, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6d795dfdeca3f154e9a30f70c7f9a590, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9575e13e5e0e28c49903a6e3bf693f7e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 95ec705e93325584aae588cd6f8df30b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 151625ae44e288c44847cf9c5db7aa8d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8f85c40faca54914d84b5fd012ac36fc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f05c981fe6082e64ea126f6da5a069ec, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 597880affa15ec442a0c65613def58b9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 42d7abbf6b55dc948aa683cf5a537b9a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c55581cf1216f7f4396ad64da800cf8e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 807ad5ffbe0fcb545877f930797cc8ad, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 26c76a9920e2642468b842b50603ef5a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 07bb848068b404f41af8fd5638aa99ce, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 53bfacfde23717040a7c06e195f2118b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3237b68fd22657c41ba096d0fb57258d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0be639060445ed64b9e4e3cec9854b0a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 225
+  Script: {instanceID: 0}
+Assets:
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cadaiduong export/Ca_Dai_Duong.png
+- Assets/01UwinLua/Game/GateGame/Animations/Prefab/anim_xocxoc.prefab
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cao thap export/icon_caothap_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/Commingsoon/slot-tala-coming soon_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cadaiduong export/icon_cadaiduong_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Lua/Customer/CustomerAutoSort.lua.txt
+- Assets/01UwinLua/Game/GateGame/Spine/BauCua/baucua_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/Slot ThanTai/OngThanTai_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/BauCua/Bau_Cua1.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLenSolo/TLMN_Solo.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/BauCua/baucua.json
+- Assets/01UwinLua/Game/GateGame/Spine/ButtonCuaHang/title_cuahang.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/minipoker export/icon_mini_poker.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/taixiu export/Tai_Xiu_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/Slot Panda/Panda_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cao thap export/Cao_Thap.json
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/minipoker export/icon_mini_poker.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSamSOlo/Sam_Loc_Solo.png
+- Assets/01UwinLua/Game/GateGame/Spine/Slot Panda/kungfu_panda_slot_game_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLenSolo/TLMN_Solo.json
+- Assets/01UwinLua/Game/GateGame/Animations/res/xamloc/idlesamloc.anim
+- Assets/01UwinLua/Game/GateGame/Animations/Prefab/anim_minipoker.prefab
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cao thap export/icon_caothap.png
+- Assets/01UwinLua/Game/GateGame/Spine/Slot TamQuoc/Tam_Quoc1.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cao thap export/icon_caothap.json
+- Assets/01UwinLua/Game/GateGame/Animations/res/xocxoc/aim_xocxoc.controller
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLen/tienlen_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSamSOlo/Sam_Loc_Solo_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Lua/CreateAccount/LCreateAccountController.lua.txt
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cadaiduong export/icon_cadaiduong.json
+- Assets/01UwinLua/Game/GateGame/Spine/XocDia/Xoc_Dia.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/3cay/bg.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cadaiduong export/Ca_Dai_Duong_Material.mat
+- Assets/01UwinLua/Game/GateGame/Animations/res/xocxoc/ribbon.png
+- Assets/01UwinLua/Game/GateGame/Spine/XocDia/xocdia_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/BauCua/baucua_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/Slot ThanTai/OngThanTai_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cadaiduong export/Ca_Dai_Duong_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cadaiduong export/Ca_Dai_Duong1.png
+- Assets/01UwinLua/Game/GateGame/Spine/Slot Panda/kungfu_panda_slot_game.json
+- Assets/01UwinLua/Game/GateGame/Spine/BaiBacay/3_Cay.json
+- Assets/01UwinLua/Game/GateGame/Spine/BaiBacay/3_Cay.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cao thap export/icon_caothap.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/ButtonCuaHang/title_cuahang_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/BaiBacay/3_Cay_Material.mat
+- Assets/01UwinLua/Game/GateGame/Animations/res/xamloc/xamlocsolo/text.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/xamloc/bg.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/3cay/anim_3cay.controller
+- Assets/01UwinLua/Game/GateGame/Spine/Slot ThanTai/Than_Tai_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Animations/res/xamloc/xamlocsolo/anim_Samlocsolo.controller
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cao thap export/Cao_Thap_Material.mat
+- Assets/01UwinLua/Game/GateGame/Animations/res/xocxoc/text.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/taixiu export/Tai_Xiu.json
+- Assets/01UwinLua/Game/GateGame/Animations/res/xamloc/xamlocsolo/iconbai.png
+- Assets/01UwinLua/Game/GateGame/Spine/Slot Panda/Panda.json
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLen/TLMN.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Lua/Lobby/LobbyController.lua.txt
+- Assets/01UwinLua/Game/GateGame/Spine/Slot ThanTai/Than_Tai.json
+- Assets/01UwinLua/Game/GateGame/Spine/Slot ThanTai/Than_Tai_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSam/sam.json
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmnsolo/tlmnsolo_idle.anim
+- Assets/01UwinLua/Game/GateGame/Spine/Slot Panda/Panda.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/xamloc/card.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLenSolo/TLMN_Solo_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmnsolo/solo.png
+- Assets/01UwinLua/Game/GateGame/Spine/Commingsoon/slot-tala-coming soon.json
+- Assets/01UwinLua/Game/GateGame/Spine/XocDia/Xoc_Dia.json
+- Assets/01UwinLua/Game/GateGame/Prefabs/Login/LCreateAccountController.prefab
+- Assets/01UwinLua/Game/GateGame/Animations/res/baucua/bg.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/minipoker export/Mini_Poker_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/XocDia/xocdia.json
+- Assets/01UwinLua/Prefabs/LuaManager.prefab
+- Assets/01UwinLua/Game/GateGame/Spine/Slot Panda/kungfu_panda_slot_game_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cadaiduong export/icon_cadaiduong_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmnsolo/flare.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/3cay/idle3cay.anim
+- Assets/01UwinLua/Game/GateGame/Lua/Login/BTGetOTPLogin.lua.txt
+- Assets/01UwinLua/Game/GateGame/Animations/res/baucua/light.png
+- Assets/01UwinLua/Game/GateGame/Lua/CreateAccount/LCreateNewName.lua.txt
+- Assets/01UwinLua/Game/GateGame/Animations/res/baucua/idleBauCua.anim
+- Assets/01UwinLua/Game/GateGame/Spine/Slot Panda/kungfu_panda_slot_game.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Animations/Prefab/anim_TLMN.prefab
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLen/TLMN.json
+- Assets/01UwinLua/Game/GateGame/Spine/ButtonCuaHang/title_cuahang_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/BauCua/Bau_Cua.json
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmnsolo/txt_miennam.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSamSOlo/Sam_Loc_Solo1.png
+- Assets/01UwinLua/Game/GateGame/Spine/BauCua/baucua.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/ButtonVQ/btn_vqmm.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/Commingsoon/slot-tala-coming soon.png
+- Assets/01UwinLua/Game/GateGame/Spine/ButtonCuaHang/title_cuahang.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/xamloc/anim_Samloc.controller
+- Assets/01UwinLua/Game/GateGame/Spine/ButtonCuaHang/title_cuahang_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTala/tala_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmnsolo/anim_tlmnsolo.anim
+- Assets/01UwinLua/Game/GateGame/Spine/BaiBacay/3_Cay1.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTala/tala.json
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSam/Sam_Loc.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLen/tienlen.png
+- Assets/01UwinLua/Game/GateGame/Spine/Slot Panda/kungfu_panda_slot_game.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/baucua/flare.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSam/sam_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Animations/res/baucua/text.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/taixiu export/icon_taixiu.json
+- Assets/01UwinLua/Game/GateGame/Spine/Slot Panda/Pan_da1.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiBacay/slot-3cay_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/minipoker export/Mini_Poker_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/Commingsoon/slot-tala-coming soon.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Animations/res/3cay/anim_3cay.anim
+- Assets/01UwinLua/Game/GateGame/Spine/XocDia/Xoc_Dia1.png
+- Assets/01UwinLua/Game/GateGame/Spine/Slot TamQuoc/TamQuocLobbyAnimation_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/minipoker export/icon_mini_poker_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/ButtonCuaHang/title_cuahang.json
+- Assets/01UwinLua/Game/GateGame/Spine/BaiBacay/slot-3cay_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/Slot TamQuoc/Tam_Quoc.json
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cao thap export/icon_caothap_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSam/sam.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/Slot TamQuoc/TamQuocLobbyAnimation_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/XocDia/xocdia_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cadaiduong export/icon_cadaiduong.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cadaiduong export/icon_cadaiduong_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSamSOlo/Sam_Loc_Solo.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTala/tala.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmnsolo/chip.png
+- Assets/01UwinLua/Game/GateGame/Spine/Slot TamQuoc/Tam_Quoc.png
+- Assets/01UwinLua/Game/GateGame/Spine/Slot ThanTai/Than_Tai_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/taixiu export/Tai_Xiu1.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cadaiduong export/Ca_Dai_Duong.json
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cao thap export/Cao_Thap.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Animations/res/baucua/anim_baucua.controller
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/minipoker export/Mini_Poker.png
+- Assets/01UwinLua/Game/GateGame/Spine/Slot Panda/Panda_Material.mat
+- Assets/01UwinLua/Game/GateGame/Animations/Prefab/anim_TLMNSolo.prefab
+- Assets/01UwinLua/Game/GateGame/Spine/Coming_Soon.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmn/flare.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/baucua/dice.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/xamloc/xamlocsolo/light 2.png
+- Assets/01UwinLua/Game/GateGame/Spine/Slot ThanTai/Than_Tai.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSam/Sam_Loc_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cadaiduong export/Ca_Dai_Duong.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/minipoker export/Mini_Poker.json
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSam/sam_Controller.controller
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTala/tala.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmn/anim_tlmn.anim
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLen/tienlen_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/taixiu export/icon_taixiu_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cadaiduong export/icon_cadaiduong.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/BauCua/Bau_Cua_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/Commingsoon/slot-tala-coming soon_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/taixiu export/Tai_Xiu_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/BauCua/baucua_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/Slot ThanTai/OngThanTai.json
+- Assets/01UwinLua/Game/GateGame/Spine/BauCua/Bau_Cua_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLen/TLMN_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/ButtonVQ/btn_vqmm.json
+- Assets/01UwinLua/Game/GateGame/Animations/res/xocxoc/idlexocxoc.anim
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmnsolo/anim_TLMNsolo.controller
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSamSOlo/Sam_Loc_Solo.json
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/taixiu export/icon_taixiu_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/Slot TamQuoc/TamQuocLobbyAnimation.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/xamloc/xamlocsolo/anim_Samlocsolo
+  1.prefab
+- Assets/01UwinLua/Game/GateGame/Spine/Slot ThanTai/OngThanTai.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSamSOlo/Sam_Loc_Solo_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/Commingsoon/slot-tala-coming soon_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLen/tienlen_Material.mat
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmn/txt_miennam.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/xocxoc/bg.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cao thap export/icon_caothap_Material.mat
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmn/bg.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/taixiu export/icon_taixiu.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/BaiBacay/3_Cay_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLenSolo/TLMN_Solo_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/ButtonCuaHang/Button_Cua_Hang.png
+- Assets/01UwinLua/Game/GateGame/Spine/Slot ThanTai/OngThanTai_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/taixiu export/icon_taixiu.png
+- Assets/01UwinLua/Game/GateGame/Spine/Slot Panda/kungfu_panda_slot_game_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/minipoker export/Mini_Poker_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/Slot ThanTai/Than_Tai1.png
+- Assets/01UwinLua/Game/GateGame/Animations/Prefab/anim_3cay.prefab
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmn/txt_tienlen.png
+- Assets/01UwinLua/Game/GateGame/Spine/BauCua/baucua.png
+- Assets/01UwinLua/Game/GateGame/Prefabs/LayerController.prefab
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLen/TLMN_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/ButtonVQ/btn_vqmm_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/Slot ThanTai/OngThanTai.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cao thap export/Cao_Thap_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Prefabs/LViewLobby.prefab
+- Assets/01UwinLua/Game/GateGame/Spine/BaiBacay/3_Cay_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmn/anim_TLMN.controller
+- Assets/01UwinLua/Game/GateGame/Spine/Slot Panda/Panda.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/BaiBacay/slot-3cay.png
+- Assets/01UwinLua/Game/GateGame/Animations/Prefab/anim_caothap.prefab
+- Assets/01UwinLua/Game/GateGame/Animations/res/3cay/text.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmnsolo/txt_tienlen.png
+- Assets/01UwinLua/Game/GateGame/Spine/BauCua/Bau_Cua_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/BaiBacay/3_Cay.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLen/tienlen.json
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSam/Sam_Loc.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/minipoker export/Mini_Poker1.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLen/tienlen.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmn/idle_tlmn.anim
+- Assets/01UwinLua/Game/GateGame/Animations/res/xamloc/xamlocsolo/anim_samlocsolo.anim
+- Assets/01UwinLua/Game/GateGame/Spine/BauCua/Bau_Cua.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/taixiu export/icon_taixiu_Material.mat
+- Assets/01UwinLua/Game/GateGame/Animations/res/xamloc/anim_samloc.anim
+- Assets/01UwinLua/Game/GateGame/Animations/res/baucua/ca.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmn/chip.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cao thap export/Cao_Thap_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/XocDia/xocdia.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSam/sam_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/XocDia/Xoc_Dia_Material.mat
+- Assets/01UwinLua/Game/GateGame/Animations/res/xocxoc/dia.png
+- Assets/01UwinLua/Game/GateGame/Spine/Slot TamQuoc/TamQuocLobbyAnimation_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/Slot TamQuoc/Tam_Quoc_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/ButtonCuaHang/Cua_hang.png
+- Assets/01UwinLua/Game/GateGame/Spine/XocDia/Xoc_Dia_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTala/tala_Material.mat
+- Assets/01UwinLua/Game/GateGame/Animations/res/3cay/flare.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSam/sam_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSam/Sam_Loc1.png
+- Assets/01UwinLua/Game/GateGame/Spine/XocDia/Xoc_Dia_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/Slot TamQuoc/Tam_Quoc_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cao thap export/1.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/taixiu export/Tai_Xiu.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/xocxoc/animxocxoc.anim
+- Assets/01UwinLua/Game/GateGame/Animations/res/xocxoc/bat.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/minipoker export/icon_mini_poker_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/XocDia/xocdia_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLen/TLMN_Material.mat
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTala/tala_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Animations/Prefab/anim_Samloc.prefab
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLen/TLMN.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/xamloc/xamlocsolo/idlesamlocsolo.anim
+- Assets/01UwinLua/Game/GateGame/Animations/res/baucua/ga.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/baucua/animBauCua.anim
+- Assets/01UwinLua/Game/GateGame/Animations/res/baucua/ribbon.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/minipoker export/icon_mini_poker_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Animations/res/tlmnsolo/bg.png
+- Assets/01UwinLua/Game/GateGame/Animations/res/xamloc/light.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSam/Sam_Loc.json
+- Assets/01UwinLua/Game/GateGame/Animations/res/xamloc/xamlocsolo/flare 1.png
+- Assets/01UwinLua/Game/GateGame/Spine/Slot TamQuoc/Tam_Quoc_Material.mat
+- Assets/01UwinLua/Game/GateGame/Lua/Lobby/LViewLobby.lua.txt
+- Assets/01UwinLua/Game/GateGame/Animations/res/3cay/card.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/minipoker export/icon_mini_poker.json
+- Assets/01UwinLua/Game/GateGame/Spine/Slot ThanTai/Than_Tai.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSam/Sam_Loc_Material.mat
+- Assets/01UwinLua/Game/GateGame/Animations/res/3cay/lighting2.png
+- Assets/01UwinLua/Game/GateGame/Spine/Slot TamQuoc/Tam_Quoc.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Animations/res/xocxoc/flare.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLenSolo/TLMN_Solo.png
+- Assets/01UwinLua/Game/GateGame/Spine/XocDia/Xoc_Dia.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cao thap export/Cao_Thap.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSam/Sam_Loc_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSam/sam.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiBacay/slot-3cay_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/ButtonVQ/btn_vqmm_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Animations/res/3cay/lighting1.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/taixiu export/Tai_Xiu_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/BaiSamSOlo/Sam_Loc_Solo_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Animations/res/xamloc/xamlocsolo/bg.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiBacay/slot-3cay.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Animations/res/xamloc/text.png
+- Assets/01UwinLua/Game/GateGame/Spine/ButtonVQ/btn_vqmm_Material.mat
+- Assets/01UwinLua/Game/GateGame/Animations/res/baucua/bau.png
+- Assets/01UwinLua/Game/GateGame/Lua/Lobby/ElementGameTlmn.lua.txt
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLenSolo/TLMN_Solo_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Spine/BauCua/Bau_Cua.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/cadaiduong export/Ca_Dai_Duong_SkeletonData.asset
+- Assets/01UwinLua/Game/GateGame/Animations/Prefab/anim_vuabao.prefab
+- Assets/01UwinLua/Game/GateGame/Animations/Prefab/anim_baucua.prefab
+- Assets/01UwinLua/Game/GateGame/Lua/ConfigGate.lua.txt
+- Assets/01UwinLua/Game/GateGame/Lua/UILayerController.lua.txt
+- Assets/01UwinLua/Game/GateGame/Spine/Slot Panda/Panda_Atlas.asset
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/taixiu export/Tai_Xiu.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/Slot TamQuoc/TamQuocLobbyAnimation.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLen/TLMN 1.png
+- Assets/01UwinLua/Game/GateGame/Spine/MiniGameIcon/minipoker export/Mini_Poker.atlas.txt
+- Assets/01UwinLua/Game/GateGame/Spine/XocDia/xocdia.png
+- Assets/01UwinLua/Game/GateGame/Spine/BaiBacay/slot-3cay.json
+- Assets/01UwinLua/Game/GateGame/Spine/BaiTienLenSolo/TLMN_Solo1.png
+- Assets/01UwinLua/Game/GateGame/Spine/ButtonCuaHang/Button_Cua_Hang_Glow.png
+- Assets/01UwinLua/Game/GateGame/Spine/ButtonVQ/btn_vqmm.png
+- Assets/01UwinLua/Game/GateGame/Spine/Slot TamQuoc/TamQuocLobbyAnimation.json
+- Assets/01UwinLua/Game/GateGame/Animations/res/3cay/vag.png
+Dependencies:
+- E:/Work/FREELANCE/NEW_JOB/UwinClient/AssetBundles/IOS/common.bundle

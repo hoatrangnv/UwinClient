@@ -368,6 +368,23 @@ public class SendRequest
 
     #endregion
 
+    #region VIP POINT
+    public static void GetContentVP()
+    {
+        WebServiceController.Instance.SendRequest(WebServiceCode.Code.GetVipPoint, null, HTTPMethods.Get);
+    }
+
+    public static void GetHistoryVP()
+    {
+        WebServiceController.Instance.SendRequest(WebServiceCode.Code.GetHistoryVP, null, HTTPMethods.Get);
+    }
+
+    public static void GetRewardVP(int value)
+    {
+        WebServiceController.Instance.SendRequestCodeString("GetRewardVP", "https://api.uwin369.net/VipPoint/ReceiveVipPoint?rewardid=" + value, null, 0);
+    }
+    #endregion
+
     #region Slot 20 line
     public static void SendGetSlot20LineHistory(string api, int moneyType)
     {

@@ -19,6 +19,7 @@ public static class IndexSourceGate
     public static int LFSendMoney = 12;
     public static int LFInfo = 13;
     public static int LFReceiveMoney = 14;
+    public static int LVipPoint = 15;
 }
 
 public class DataResourceLobby : MonoBehaviour

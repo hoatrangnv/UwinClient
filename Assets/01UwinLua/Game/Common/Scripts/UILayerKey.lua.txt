@@ -23,6 +23,7 @@ local UILayerKey =
     LMail = "LMail",
     LHistory = "LHistory",
     LGiftCode = "LGiftCode",
+	LVipPoint = "LVipPoint",
 
     -- Game
     LGameSlot20Line = "LGameSlot20Line",
