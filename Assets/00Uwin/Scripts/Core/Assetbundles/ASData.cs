@@ -16,14 +16,13 @@ public class AssetBundleSetting
     public static string GetPlatform() 
     {
 #if UNITY_ANDROID
-        return "Win/";
+        return "Android/";
 #elif UNITY_IOS
         return "IOS/";
 #elif UNITY_STANDALONE_WIN
         return "Win/";
 #elif UNITY_STANDALONE_OSX
         return "Win/";
-        //return "MacOS/";
 #elif UNITY_WEBGL
         return "WebGL/";
 #endif

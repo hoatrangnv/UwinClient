@@ -131,9 +131,9 @@ public class HighLowSignalRServer : ISignalRServer
     {
         base.RegisterHubFunction();
 
+        _hub.On(SRSConst.JACKPOT_HILO, HubUpdateJackpot);
         _hub.On(SRSConst.RESULT_ACCOUNT_INFO_HILO, HubGetAccountInfoHiLo);
         _hub.On(SRSConst.RESULT_HILO_SET_BET, HubResultBet);
-        _hub.On(SRSConst.JACKPOT_HILO, HubUpdateJackpot);
     }
 
     #endregion

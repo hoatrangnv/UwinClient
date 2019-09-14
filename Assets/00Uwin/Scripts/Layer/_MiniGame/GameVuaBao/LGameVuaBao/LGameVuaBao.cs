@@ -43,6 +43,12 @@ public class LGameVuaBao : UILayer
     public Transform gLight;
 
     [Space(20)]
+    public Image imgBtMoneyType;
+    public Text txtMoneyType;
+    public Sprite[] sprMoney;
+    public string[] strMoney;
+
+    [Space(20)]
     public Image imgSound;
     public Sprite[] sprSound;
 
@@ -374,7 +380,7 @@ public class LGameVuaBao : UILayer
 
     public void ChangeTypeMoney()
     {
-        //imgBtMoneyType.sprite = sprs[moneyType == (int)MoneyType.GOLD ? 0 : 1];
+        imgBtMoneyType.sprite = sprMoney[moneyType == (int)MoneyType.GOLD ? 0 : 1];
     }
 
     public void ChangeSound()

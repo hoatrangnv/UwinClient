@@ -11,24 +11,28 @@ public class SendRequest
     }
     public static void SendSignInRequest(string username, string password)
     {
+        string dID = UnityEngine.SystemInfo.deviceUniqueIdentifier;
         SSignInRequest data = new SSignInRequest
         {
             username = username,
             password = password,
             device = VKCommon.DeviceId(),
-            deviceID = UnityEngine.SystemInfo.deviceUniqueIdentifier
-    };
+            deviceID = dID,
+            signature = MD5Helper.Encrypt(string.Format("begin--{0}#{1}#{2}--end", username, password, dID))
+        };
 
         WebServiceController.Instance.SendRequest(WebServiceCode.Code.SignIn, data, HTTPMethods.Post);
     }
 
     public static void SendSignInFacebookRequest(string accessToken)
     {
+        string dID = UnityEngine.SystemInfo.deviceUniqueIdentifier;
         SSignInFacebookRequest data = new SSignInFacebookRequest
         {
             accessToken = accessToken,
             device = VKCommon.DeviceId(),
-            deviceID = UnityEngine.SystemInfo.deviceUniqueIdentifier
+            deviceID = dID,
+            signature = MD5Helper.Encrypt(string.Format("begin--{0}#{1}--end", accessToken, dID))
         };
 
         WebServiceController.Instance.SendRequest(WebServiceCode.Code.SignInFacebook, data, HTTPMethods.Post);
@@ -83,11 +87,13 @@ public class SendRequest
 
     public static void SendLoginOTP(string otp, string token)
     {
+        string dID = UnityEngine.SystemInfo.deviceUniqueIdentifier;
         SLoginOTP data = new SLoginOTP
         {
             otp = otp,
             token = token,
-            deviceID = UnityEngine.SystemInfo.deviceUniqueIdentifier
+            deviceID = dID,
+            signature = MD5Helper.Encrypt(string.Format("begin--{0}#{1}--end", otp, dID))
         };
 
         WebServiceController.Instance.SendRequest(WebServiceCode.Code.LoginOTP, data, HTTPMethods.Post);

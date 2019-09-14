@@ -31,6 +31,7 @@ public class LGameLuckySpin : UILayer
     //win
     public GameObject gWin;
     public Text txtGoldWin;
+    public GameObject iconGold;
     public Text txtCoinWin;
 
     public string[] mapCoinResult;
@@ -232,6 +233,15 @@ public class LGameLuckySpin : UILayer
         {
             if (mapGoldResult.Length > mSpinData.StarResult)
             {
+                if(mSpinData.StarResult == 11)
+                {
+                    iconGold.SetActive(false);
+                }
+                else
+                {
+                    iconGold.SetActive(true);
+                }
+
                 txtGoldWin.text = mapGoldResult[mSpinData.StarResult];
                 txtGoldWin.gameObject.SetActive(true);
             }

@@ -8,6 +8,7 @@ public class SSignInRequest : BaseRequest
     public string password;
     public int device;
     public string deviceID;
+    public string signature;
 
     public override void AddData(HTTPRequest request)
     {
@@ -15,6 +16,7 @@ public class SSignInRequest : BaseRequest
         request.AddField("password", password);
         request.AddField("device", device.ToString());
         request.AddField("deviceID", deviceID);
+        request.AddField("signature", signature);
     }
 
     public override string GetData()
@@ -31,12 +33,14 @@ public class SSignInFacebookRequest : BaseRequest
     public string accessToken;
     public int device;
     public string deviceID;
+    public string signature;
 
     public override void AddData(HTTPRequest request)
     {
         request.AddField("accessToken", accessToken);
         request.AddField("device", device.ToString());
         request.AddField("deviceID", deviceID);
+        request.AddField("signature", signature);
     }
 
     public override string GetData()
@@ -102,12 +106,14 @@ public class SLoginOTP : BaseRequest
     public string otp;
     public string token;
     public string deviceID;
+    public string signature;
 
     public override void AddData(HTTPRequest request)
     {
         request.AddField("otp", otp);
         request.AddField("tokenOTP", token);
         request.AddField("deviceID", deviceID);
+        request.AddField("signature", signature);
     }
 
     public override string GetData()

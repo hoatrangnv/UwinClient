@@ -1554,7 +1554,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 051840bcedabbf248a1981cf34d378cf, type: 3}
+    m_Font: {fileID: 12800000, guid: c65db0d38f457471ebf191cae1f439fc, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -1566,7 +1566,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: heglo heglo heglo heglo
+  m_Text: 
 --- !u!114 &114199577246570404
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2018,7 +2018,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 051840bcedabbf248a1981cf34d378cf, type: 3}
+    m_Font: {fileID: 12800000, guid: c65db0d38f457471ebf191cae1f439fc, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -2030,7 +2030,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: heglo heglo heglo heglo
+  m_Text: 
 --- !u!114 &114337071255028304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2120,7 +2120,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 051840bcedabbf248a1981cf34d378cf, type: 3}
+    m_Font: {fileID: 12800000, guid: c65db0d38f457471ebf191cae1f439fc, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -2132,7 +2132,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: heglo heglo heglo heglo
+  m_Text: 
 --- !u!114 &114377564217022170
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2632,7 +2632,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 051840bcedabbf248a1981cf34d378cf, type: 3}
+    m_Font: {fileID: 12800000, guid: c65db0d38f457471ebf191cae1f439fc, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -2644,7 +2644,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: heglo heglo heglo heglo
+  m_Text: 
 --- !u!114 &114574186395039554
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3971,8 +3971,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 136}
-  m_SizeDelta: {x: 155, y: 107}
+  m_AnchoredPosition: {x: 0, y: 135}
+  m_SizeDelta: {x: 167, y: 147}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &224181907450540596
 RectTransform:
@@ -4101,7 +4101,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 10, y: 0}
-  m_SizeDelta: {x: 159, y: 26}
+  m_SizeDelta: {x: 0, y: 24.460857}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!224 &224253072659531726
 RectTransform:
@@ -4350,8 +4350,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 136}
-  m_SizeDelta: {x: 155, y: 107}
+  m_AnchoredPosition: {x: 0, y: 135}
+  m_SizeDelta: {x: 167, y: 147}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &224431926999420078
 RectTransform:
@@ -4369,7 +4369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -29}
+  m_AnchoredPosition: {x: 0, y: -40}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &224434879837768750
@@ -4388,7 +4388,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 10, y: 0}
-  m_SizeDelta: {x: 159, y: 26}
+  m_SizeDelta: {x: 0, y: 24.460857}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!224 &224449508026805468
 RectTransform:
@@ -4523,8 +4523,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4, y: 136}
-  m_SizeDelta: {x: 155, y: 107}
+  m_AnchoredPosition: {x: 0, y: 135}
+  m_SizeDelta: {x: 167, y: 147}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &224565927984535656
 RectTransform:
@@ -4691,7 +4691,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -29}
+  m_AnchoredPosition: {x: 0, y: -40}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &224744341650363450
@@ -4710,7 +4710,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -29}
+  m_AnchoredPosition: {x: 0, y: -40}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &224746008734579814
@@ -4729,7 +4729,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 10, y: 0}
-  m_SizeDelta: {x: 159, y: 26}
+  m_SizeDelta: {x: 0, y: 24.460857}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!224 &224747133908496632
 RectTransform:
@@ -4845,7 +4845,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -29}
+  m_AnchoredPosition: {x: 0, y: -40}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &224817844841792188
@@ -4864,7 +4864,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 10, y: 0}
-  m_SizeDelta: {x: 159, y: 26}
+  m_SizeDelta: {x: 0, y: 24.460857}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!224 &224833639931538856
 RectTransform:
@@ -5070,8 +5070,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 136}
-  m_SizeDelta: {x: 155, y: 107}
+  m_AnchoredPosition: {x: 0, y: 135}
+  m_SizeDelta: {x: 167, y: 147}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &224985947593309322
 RectTransform:

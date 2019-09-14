@@ -183,7 +183,7 @@ end
 
 function AddEvent()
     btPlayNow.onClick:AddListener(ButtonChoiNhanhClickListener)
-    btChangeMoney.onClick:AddListener(ButtonChangeMoneyClickListener)
+
     btCloseMenu.onClick:AddListener(ButtonMenuClickListener)
     btSound.onClick:AddListener(ButtonMenuClickListener)
     btMusic.onClick:AddListener(ButtonMusicClickListener)

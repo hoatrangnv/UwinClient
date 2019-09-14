@@ -2444,7 +2444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1635959937342292
 GameObject:
   m_ObjectHideFlags: 1
@@ -4504,7 +4504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -10937,6 +10937,14 @@ MonoBehaviour:
   btAuto: {fileID: 114774494830682806}
   btSieuToc: {fileID: 114685828307934918}
   gLight: {fileID: 224177592361689510}
+  imgBtMoneyType: {fileID: 114945384905699806}
+  txtMoneyType: {fileID: 0}
+  sprMoney:
+  - {fileID: 21300000, guid: 27b7ba24ed8da224bbe9dd4517434a04, type: 3}
+  - {fileID: 21300000, guid: 2c60c63772ff9224e90a50d19a17f7dc, type: 3}
+  strMoney:
+  - "V\xE0ng"
+  - Xu
   imgSound: {fileID: 114453542425100564}
   sprSound:
   - {fileID: 21300000, guid: 9f5a27f20827f354e8d1ee39eee9ec62, type: 3}
@@ -15174,7 +15182,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -29}
+  m_AnchoredPosition: {x: 0, y: -40}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!224 &224018623401095830

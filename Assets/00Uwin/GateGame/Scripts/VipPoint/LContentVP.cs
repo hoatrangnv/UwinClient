@@ -44,6 +44,7 @@ public class LContentVP : AbsHistoryVP
             case WebServiceCode.Code.GetVipPoint:
                 if (status == WebServiceStatus.Status.OK)
                 {
+                    Debug.Log(data);
                     VipPoint vp = JsonConvert.DeserializeObject<VipPoint>(data);
 
                     if (vp.Code == 0)
