@@ -213,6 +213,7 @@ public class CashoutModel
     public long Balance;
     public long Status;
     public MobileCard CashoutCard;
+    public string Msg;
 }
 
 public class MobileCard

@@ -13033,9 +13033,9 @@ MonoBehaviour:
   layerKey: 0
   isLayerAnimOpenDone: 0
   _GAMEID: 4
-  _API: https://taxi.uwin369.net/
-  _APIEVENT: https://event.uwin369.net/api/Luckydice/
-  _URL: https://taxi.uwin369.net/signalr/negotiate/
+  _API: https://taxi.loc.red/
+  _APIEVENT: https://event.loc.red/api/Luckydice/
+  _URL: https://taxi.loc.red/signalr/negotiate/
   _HUBNAME: luckyDice
   _SCLICK: {fileID: 8300000, guid: 48d7b6a4db3dfd343be732d189d6e180, type: 3}
   _SFAIL: {fileID: 8300000, guid: be690447866e84b43890fb7084adf21c, type: 3}

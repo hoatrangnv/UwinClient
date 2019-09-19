@@ -19,6 +19,7 @@ public class LobbyController : MonoBehaviour
     private float timeGetMailUnread = 30f;
     private IEnumerator ieGetMailUnread;
 
+
     #region Init
     public void Init(LViewLobby viewLobby)
     {
@@ -171,9 +172,12 @@ public class LobbyController : MonoBehaviour
             UILayerController.Instance.ShowLayer(UILayerKey.LLogInWithOTP, DataResourceLobby.instance.listObjLayer[(int)IndexSourceGate.LLOGIN_WITH_OTP]);
             VKDebug.LogColorRed("Hien Layout Get OTP");
         }
-
     }
 
+
+    #endregion
+
+    #region Handle Method
     public void LoginSuccessWithOTP(bool isSuccess)
     {
         viewLobby.LoginSuccess();
@@ -199,8 +203,7 @@ public class LobbyController : MonoBehaviour
             StopCoroutine(ieGetMailUnread);
         }
     }
-
-    #endregion
+#endregion
 
     #region Profile
 

@@ -9296,7 +9296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 401a1f53826705d40b23731c31f1aed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  linkGetDownload: https://files.uwin369.net/imageEvent/downloadImageEventRedirect.txt
+  linkGetDownload: https://files.loc.red/imageEvent/downloadImageEventRedirect.txt
   colorActivePage: {r: 1, g: 1, b: 1, a: 1}
   colorDisablePage: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 0.76862746}
   rectTransAllContent: {fileID: 224159822424864660}

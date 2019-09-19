@@ -668,6 +668,7 @@ public class LGameTaiXiu : UILayer
         _soundSetting = AudioAssistant.Instance.GetSettingSound(_GAMEID);
 
         _taixiu.MoneyType = MoneyType.GOLD;
+
         _server = SignalRController.Instance.CreateServer<TaiXiuSignalRServer>((int)_GAMEID);
         _server.OnSRSEvent = OnSRSEvent;
         _server.OnSRSHubEvent = OnSRSHubEvent;

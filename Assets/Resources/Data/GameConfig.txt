@@ -1,6 +1,6 @@
 {
   "assetbundle": {
-    "link": "https://files.uwin369.net/u1/pub/",
+    "link": "https://files.loc.red/u1/pub/",
     "preload": [
       {
         "gid": 0,
@@ -99,8 +99,8 @@
   ,
   "taixiu": {
     "gameId": 4,
-    "urlApi": "https://files.uwin369.net",
-    "urlServer": "https://files.uwin369.net/signalr/negotiate",
+    "urlApi": "https://files.loc.red",
+    "urlServer": "https://files.loc.red/signalr/negotiate",
     "hubName": "luckyDice"
   }
 }

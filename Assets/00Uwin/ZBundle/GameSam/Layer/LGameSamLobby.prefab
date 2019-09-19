@@ -7716,9 +7716,9 @@ MonoBehaviour:
   isLayerAnimOpenDone: 0
   _config:
     gameId: 104
-    urlApi: https://samlocsolo.uwin369.net/samloc/
-    urlServerSolo: https://samlocsolo.uwin369.net/signalr/negotiate
-    urlServerMulti: https://samloc.uwin369.net/signalr/negotiate
+    urlApi: https://samlocsolo.loc.red/samloc/
+    urlServerSolo: https://samlocsolo.loc.red/signalr/negotiate
+    urlServerMulti: https://samloc.loc.red/signalr/negotiate
     hubName: samlocHub
     audioBackground: {fileID: 8300000, guid: b7f3642791819e04691f2808746a5092, type: 3}
     audioButtonClick: {fileID: 8300000, guid: 48d7b6a4db3dfd343be732d189d6e180, type: 3}

@@ -132,7 +132,7 @@ public class SceneStart : MonoBehaviour
         }
 
         //My cheat version
-        if(verBuild > data.versionMax)
+        if (verBuild > data.versionMax)
             PlayerPrefs.SetInt("ShowIAPStore", 1);
         else
             PlayerPrefs.SetInt("ShowIAPStore", 0);
@@ -213,6 +213,7 @@ public class SceneStart : MonoBehaviour
         }
 
         string uri = linkResource + GetEnvironment() + AssetBundleSetting.GetPlatform() + "gameconfig.txt";
+
         StartCoroutine(VKCommon.DownloadTextFromURL(uri, (string strConfig) =>
         {
             popupStart.SetNotice("Cập nhật dữ liệu...!");

@@ -57,9 +57,9 @@ public class FishSignIR : MonoBehaviour
         {
             UILayerController.Instance.ShowLoading();
 
-            StartCoroutine(ISendRequestOther("1", "https://api.uwin369.net//Account/GetTokenAuthen", null, 0, (responseData) =>
+            StartCoroutine(ISendRequestOther("1", "https://api.loc.red//Account/GetTokenAuthen", null, 0, (responseData) =>
             {
-                StartCoroutine(ISendRequestOther("1", "https://api.uwin369.net//Account/GetFishAccount", null, 0, (res) =>
+                StartCoroutine(ISendRequestOther("1", "https://api.loc.red//Account/GetFishAccount", null, 0, (res) =>
                 {
                     UILayerController.Instance.HideLoading();
                     fishAccount = JsonConvert.DeserializeObject<FAccountResponse>(res);
@@ -235,7 +235,7 @@ public class FishSignIR : MonoBehaviour
             {
                 if (value)
                 {
-                    Application.OpenURL("https://id.uwin369.net/apps/");
+                    Application.OpenURL("https://id.loc.red/apps/");
                 }
             }, true);
         }
@@ -256,7 +256,7 @@ public class FishSignIR : MonoBehaviour
             {
                 if (value)
                 {
-                    Application.OpenURL("https://id.uwin369.net/apps/");
+                    Application.OpenURL("https://id.loc.red/apps/");
                 }
             }, true);
         }

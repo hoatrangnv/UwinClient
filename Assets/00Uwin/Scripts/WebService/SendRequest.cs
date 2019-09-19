@@ -387,7 +387,7 @@ public class SendRequest
 
     public static void GetRewardVP(int value)
     {
-        WebServiceController.Instance.SendRequestCodeString("GetRewardVP", "https://api.uwin369.net/VipPoint/ReceiveVipPoint?rewardid=" + value, null, 0);
+        WebServiceController.Instance.SendRequestCodeString("GetRewardVP", "https://api.loc.red/VipPoint/ReceiveVipPoint?rewardid=" + value, null, 0);
     }
     #endregion
 

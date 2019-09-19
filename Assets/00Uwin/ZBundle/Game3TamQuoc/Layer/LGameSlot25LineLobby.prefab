@@ -1751,8 +1751,8 @@ MonoBehaviour:
   isLayerAnimOpenDone: 0
   _config:
     gameId: 3
-    urlApi: https://haivuong.uwin369.net/
-    urlServer: https://haivuong.uwin369.net/signalr/negotiate
+    urlApi: https://haivuong.loc.red/
+    urlServer: https://haivuong.loc.red/signalr/negotiate
     hubName: Slot25Lines
     pageJackpotSize: 10
     timeWaitNextAuto: 2

@@ -13,8 +13,8 @@ local timePause = 0
 local ShowLayerFromBundleCallBack = nil
 local _uiCamera = nil
 
-local urlApiPortal = "https://api.uwin369.net/"
-local urlEvent = "https://event.uwin369.net/api/"
+local urlApiPortal = "https://api.loc.red/"
+local urlEvent = "https://event.loc.red/api/"
 
 function start()
 
