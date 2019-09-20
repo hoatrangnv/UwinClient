@@ -28,7 +28,7 @@ public class LoadSceneStart : MonoBehaviour
 
         StartCoroutine(loadTextOnline(urlGetScene));
     }
-  
+
     void downloadBundleScene(string json)
     {
         try
@@ -139,39 +139,40 @@ public class LoadSceneStart : MonoBehaviour
 
     private IEnumerator DownloadScene(string urlSceneBundle, string hash)
     {
-            imgProcess.fillAmount = 0.5f;
-            UnityWebRequest request = UnityWebRequestAssetBundle.GetAssetBundle(urlSceneBundle, Hash128.Parse(hash), 0);
-            UnityWebRequestAsyncOperation operation = request.SendWebRequest();
+        imgProcess.fillAmount = 0.5f;
+        UnityWebRequest request = UnityWebRequestAssetBundle.GetAssetBundle(urlSceneBundle, Hash128.Parse(hash), 0);
+        UnityWebRequestAsyncOperation operation = request.SendWebRequest();
 
-            ulong totalBytes = 0;
-            while (!operation.isDone)
+        ulong totalBytes = 0;
+        while (!operation.isDone)
+        {
+            if (totalBytes == 0)
             {
-                if (totalBytes == 0)
+                string length = request.GetResponseHeader("Content-Length");
+                if (length != null)
                 {
-                    string length = request.GetResponseHeader("Content-Length");
-                    if (length != null)
-                    {
-                        totalBytes = ulong.Parse(length);
-                    }
+                    totalBytes = ulong.Parse(length);
                 }
-
-                imgProcess.fillAmount = (request.downloadProgress + 0.5f) / 2f;
-
-                yield return new WaitForEndOfFrame();
             }
-            AssetBundle assetBundle = DownloadHandlerAssetBundle.GetContent(request);
 
-            if (assetBundle.isStreamedSceneAssetBundle)
-            {
-                updateText = false;
-                notice.text = "Tải game hoàn tất";
+            imgProcess.fillAmount = (request.downloadProgress + 0.5f) / 2f;
 
-                string[] scenePaths = assetBundle.GetAllScenePaths();
-                string sceneName = System.IO.Path.GetFileNameWithoutExtension(scenePaths[0]);
+            yield return new WaitForEndOfFrame();
+        }
+        AssetBundle assetBundle = DownloadHandlerAssetBundle.GetContent(request);
 
-                AsyncOperation async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName);
-                if (async == null)
-                    yield break;
-            }
+        if (assetBundle.isStreamedSceneAssetBundle)
+        {
+            imgProcess.fillAmount = 100;
+            updateText = false;
+            notice.text = "Tải game hoàn tất";
+
+            string[] scenePaths = assetBundle.GetAllScenePaths();
+            string sceneName = System.IO.Path.GetFileNameWithoutExtension(scenePaths[0]);
+
+            AsyncOperation async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName);
+            if (async == null)
+                yield break;
+        }
     }
 }
