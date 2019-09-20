@@ -95,9 +95,10 @@
     public const string FORCE_LOGOUT = "forceLogout";
     public const string LOBBY_INFO = "lobbyInfo";
     public const string BUY_MANUAL = "buyManual";
-    
-    //Sam send
 
+    //Sam send
+    //Lobby
+    public const string UPDATE_MONEY_LOBBY = "updateMoney";
 }
 
 public class SRSCallConsts

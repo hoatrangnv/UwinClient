@@ -3241,8 +3241,8 @@ MonoBehaviour:
   isLayerAnimOpenDone: 0
   _bacayConfig:
     gameId: 103
-    urlApi: https://bacay.uwin369.net
-    urlServer: https://bacay.uwin369.net/signalr/negotiate
+    urlApi: https://bacay.loc.red
+    urlServer: https://bacay.loc.red/signalr/negotiate
     hubName: bacayHub
     audioBackground: {fileID: 8300000, guid: b7f3642791819e04691f2808746a5092, type: 3}
     audioButtonClick: {fileID: 8300000, guid: 48d7b6a4db3dfd343be732d189d6e180, type: 3}

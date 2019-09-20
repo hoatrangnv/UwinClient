@@ -1165,8 +1165,8 @@ MonoBehaviour:
   isLayerAnimOpenDone: 0
   _config:
     gameId: 2
-    urlApi: https://mafia.uwin369.net/
-    urlServer: https://mafia.uwin369.net//signalr/negotiate
+    urlApi: https://mafia.loc.red/
+    urlServer: https://mafia.loc.red//signalr/negotiate
     hubName: Game2Hub
     pageJackpotSize: 10
     timeWaitNextAuto: 2

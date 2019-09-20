@@ -3812,8 +3812,8 @@ MonoBehaviour:
   layerKey: 0
   isLayerAnimOpenDone: 0
   _GAMEID: 5
-  _API: https://caothap.uwin369.net/
-  _URL: https://caothap.uwin369.net/signalr/negotiate
+  _API: https://caothap.loc.red/
+  _URL: https://caothap.loc.red/signalr/negotiate
   _HUBNAME: Hilo
   _MAXHISTORY: 100
   _SCLICK: {fileID: 8300000, guid: 48d7b6a4db3dfd343be732d189d6e180, type: 3}

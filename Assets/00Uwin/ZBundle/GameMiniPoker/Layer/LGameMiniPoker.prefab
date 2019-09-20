@@ -4878,8 +4878,8 @@ MonoBehaviour:
   layerKey: 0
   isLayerAnimOpenDone: 0
   _GAMEID: 8
-  _API: https://minipoker.uwin369.net/
-  _URL: https://minipoker.uwin369.net//signalr/negotiate/
+  _API: https://minipoker.loc.red/
+  _URL: https://minipoker.loc.red//signalr/negotiate/
   _HUBNAME: Minipoker
   _SCLICK: {fileID: 8300000, guid: 48d7b6a4db3dfd343be732d189d6e180, type: 3}
   _SFAIL: {fileID: 8300000, guid: be690447866e84b43890fb7084adf21c, type: 3}

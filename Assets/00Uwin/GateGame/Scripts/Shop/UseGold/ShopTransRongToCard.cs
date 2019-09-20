@@ -95,20 +95,21 @@ public class ShopTransRongToCard : AbsShop
                     VKDebug.LogColorRed("Cashout Model", data);
 
                     var dataReponse = Newtonsoft.Json.JsonConvert.DeserializeObject<CashoutModel>(data);
-                    if (dataReponse.Status == -101)
-                    {
-                        Database.Instance.UpdateUserGold(dataReponse.Balance);
-                        LPopup.OpenPopupTop("Thông báo", "Xin vui lòng chờ, Hệ thống đang duyệt thẻ");
-                    }
-                    else if (dataReponse.Status == 1)
-                    {
-                        Database.Instance.UpdateUserGold(dataReponse.Balance);
-                        LPopup.OpenPopupTop("Thông báo", "Bạn đổi thẻ thành công:  \n Seri:" + dataReponse.CashoutCard.CardSerial +"\n Mã thẻ:" + dataReponse.CashoutCard.CardCode);
-                    }
-                    else
-                    {
-                        var check = Helper.CheckResponseSuccess((int)dataReponse.Status);
-                    }
+                    LPopup.OpenPopupTop("Thông báo", dataReponse.Msg);
+                    //if (dataReponse.Status == -101)
+                    //{
+                    //    Database.Instance.UpdateUserGold(dataReponse.Balance);
+                    //    LPopup.OpenPopupTop("Thông báo", "Xin vui lòng chờ, Hệ thống đang duyệt thẻ");
+                    //}
+                    //else if (dataReponse.Status == 1)
+                    //{
+                    //    Database.Instance.UpdateUserGold(dataReponse.Balance);
+                    //    LPopup.OpenPopupTop("Thông báo", "Bạn đổi thẻ thành công:  \n Seri:" + dataReponse.CashoutCard.CardSerial +"\n Mã thẻ:" + dataReponse.CashoutCard.CardCode);
+                    //}
+                    //else
+                    //{
+                    //    var check = Helper.CheckResponseSuccess((int)dataReponse.Status);
+                    //}
                 }
                 else
                 {

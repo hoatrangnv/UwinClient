@@ -403,7 +403,7 @@ function ClickBtLogout()
     objMenuBottom:SetActive(false);
 
     -- logout Web
-    local url = "https://services.uwin369.net/Account/Signout"
+    local url = "https://services.loc.red/Account/Signout"
     CS.WebServiceController.Instance:SendRequestCodeString("Singout",url,nil,0)
 
     CS.AudioAssistant.Instance:Shot(CS.StringHelper.SOUND_GATE_BT);
@@ -505,6 +505,7 @@ function LoginSuccess()
 -- @Todo
     CS.MenuMiniGame.Instance:Show();
     CS.MenuMiniGame.Instance:InitTaiXiu();
+	CS.LobbySignalr.Instance:ConnectLobby();
 end
 
 function  CreateNameSuccesss(token)

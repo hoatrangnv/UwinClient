@@ -8,8 +8,10 @@ public class PopStartGame : MonoBehaviour
     public GameObject objPopup;
     public Text txtNoticePopup;
     public Text txtNotice;
+    public Text txtTitle;
+
+
     public Button btGOUpdate;
-    public Button BtCancelUpdate;
     public string linkUpdate="";
 
     private System.Action<bool> ResultAction;
@@ -17,7 +19,6 @@ public class PopStartGame : MonoBehaviour
     private void Start()
     {
         btGOUpdate.onClick.AddListener(ClickBtUpdate);
-        BtCancelUpdate.onClick.AddListener(ClickBtCancel);
     }
 
     public void SetPopup(string notice)
@@ -42,7 +43,6 @@ public class PopStartGame : MonoBehaviour
     {
         this.ResultAction = action;
         btGOUpdate.gameObject.SetActive(true);
-        BtCancelUpdate.gameObject.SetActive(true);
     }
 
 

@@ -62,7 +62,6 @@ public class LShop : UILayer
             baseStore.SetActive(true);
             ReloadLayout();
         }
-
     }
 
     public override void Close()

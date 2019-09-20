@@ -5275,7 +5275,7 @@ MonoBehaviour:
   gObjJackpot: {fileID: 1500882513054288}
   gObjBigWin: {fileID: 1617136701278508}
   gObjPerfect: {fileID: 1447239608337040}
-  autoHideJackpot: 15
+  autoHideJackpot: 3
   autoHideBigWin: 8
   autoHidePerfect: 8
 --- !u!114 &114096822495280386
@@ -10893,8 +10893,8 @@ MonoBehaviour:
   layerKey: 0
   isLayerAnimOpenDone: 0
   _GAMEID: 6
-  _API: https://kimcuong.uwin369.net/
-  _URL: https://kimcuong.uwin369.net/signalr/negotiate
+  _API: https://kimcuong.loc.red/
+  _URL: https://kimcuong.loc.red/signalr/negotiate
   _HUBNAME: HubThanQuay
   _MAXRECORD: 200
   _SCLICK: {fileID: 8300000, guid: 48d7b6a4db3dfd343be732d189d6e180, type: 3}
@@ -10954,7 +10954,7 @@ MonoBehaviour:
   txtLine: {fileID: 114582815532645166}
   txtMoneyAdd: {fileID: 114059821887951398}
   slotMachine: {fileID: 114491163422087110}
-  uiWin: {fileID: 0}
+  uiWin: {fileID: 114091606090947110}
   timePlaySpin: 0.4
   _uiEvent: {fileID: 114301951503500710}
   roomBetValues: 64000000e80300008813000010270000

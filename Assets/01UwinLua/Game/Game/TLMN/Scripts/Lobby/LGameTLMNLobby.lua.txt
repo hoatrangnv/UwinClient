@@ -52,9 +52,9 @@ local uiLayerThis
 
 -- ("CONFIG")]
 local  _GAMEID = 105
-local  _API = "https://tlmnsolo.uwin369.net/tlmnsolo/"
-local  _URLSOLO = "https://tlmnsolo.uwin369.net/signalr/negotiate"
-local  _URLMULTI = "https://tlmn.uwin369.net/signalr/negotiate"
+local  _API = "https://tlmnsolo.loc.red/tlmnsolo/"
+local  _URLSOLO = "https://tlmnsolo.loc.red/signalr/negotiate"
+local  _URLMULTI = "https://tlmn.loc.red/signalr/negotiate"
 
 local  _HUBNAME = "tienlenHub"
 

@@ -1117,8 +1117,8 @@ MonoBehaviour:
   layerIndex: 0
   layerKey: 0
   isLayerAnimOpenDone: 0
-  urlApi: https://luckyspin.uwin369.net/api
-  urlApiCaptcha: https://api.uwin369.net
+  urlApi: https://luckyspin.loc.red/api
+  urlApiCaptcha: https://api.loc.red
   _GAMEID: 101
   _SCLICK: {fileID: 8300000, guid: 48d7b6a4db3dfd343be732d189d6e180, type: 3}
   _SFAIL: {fileID: 8300000, guid: be690447866e84b43890fb7084adf21c, type: 3}

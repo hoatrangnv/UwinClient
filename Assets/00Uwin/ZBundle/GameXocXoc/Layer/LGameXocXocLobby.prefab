@@ -8313,8 +8313,8 @@ MonoBehaviour:
   isLayerAnimOpenDone: 0
   _config:
     gameId: 102
-    urlApi: https://xocxoc.uwin369.net
-    urlServer: https://xocdia.uwin369.net/signalr/negotiate
+    urlApi: https://xocxoc.loc.red
+    urlServer: https://xocdia.loc.red/signalr/negotiate
     hubName: diskShaking
     audioBackground: {fileID: 8300000, guid: b7f3642791819e04691f2808746a5092, type: 3}
     audioButtonClick: {fileID: 8300000, guid: 48d7b6a4db3dfd343be732d189d6e180, type: 3}

@@ -1160,8 +1160,8 @@ MonoBehaviour:
   isLayerAnimOpenDone: 0
   _config:
     gameId: 1
-    urlApi: https://nongtrai.uwin369.net/
-    urlServer: https://nongtrai.uwin369.net/signalr/negotiate
+    urlApi: https://nongtrai.loc.red/
+    urlServer: https://nongtrai.loc.red/signalr/negotiate
     hubName: Game1Hub
     pageJackpotSize: 10
     timeWaitNextAuto: 2

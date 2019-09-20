@@ -389,7 +389,7 @@ public class LViewLobby : UILayer
 
         MenuMiniGame.Instance.Show();
         MenuMiniGame.Instance.InitTaiXiu();
-
+        LobbySignalr.Instance.ConnectLobby();
         // load setting file
         //StartCoroutine(VKCommon.DownloadTextFromURL("http://alphaserver.rong88.club/assets/gameconfig.txt", (string strConfig) =>
         //{
