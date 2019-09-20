@@ -606,14 +606,16 @@ public class VKCommon
             else
             {
                 strCallback = www.text;
-                if (action != null)
-                    action.Invoke(strCallback);
+      
             }
         }
         catch (Exception e)
         {
             VKDebug.LogError("Download image failed: " + e.Message);
         }
+
+        if (action != null)
+            action.Invoke(strCallback);
     }
     #endregion
 }

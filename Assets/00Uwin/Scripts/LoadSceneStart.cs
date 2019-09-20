@@ -13,6 +13,7 @@ public class LoadSceneStart : MonoBehaviour
     private string urlGetScene = "https://script.googleusercontent.com/macros/echo?user_content_key=zVne-cxdxeRmW1cD6gQrmyiBysejP1DPnO755fBcTw3WgDQ3LfD6id8uTPZ4MpVV2GO5WugoDRrruZ2pA2kaPvkNfa79uGbgm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnP7KCTBjVJrk4qsEB6LwEGXvnBf-bsruUn7ek-0PWKje6A-XnLZ0xMfpXBRCsVGbd50mgLDwm9cO&lib=MvKeuOV5026TnJu1afN8k5Z3BOh0vXkHY";
     public Text notice;
 
+    public Image imgProcess;
 
     void Awake()
     {
@@ -25,13 +26,14 @@ public class LoadSceneStart : MonoBehaviour
         updateText = true;
         notice.text = "Đang tải game";
 
-        GetText();
+        StartCoroutine(loadTextOnline(urlGetScene));
     }
-    private void GetText()
+  
+    void downloadBundleScene(string json)
     {
-        StartCoroutine(VKCommon.DownloadTextFromURL(urlGetScene, (value) =>
+        try
         {
-            startValue = JsonConvert.DeserializeObject<List<Dictionary<string, string>>>(value);
+            startValue = JsonConvert.DeserializeObject<List<Dictionary<string, string>>>(json);
 
             string hash = startValue[0]["hash"];
             int canStartGame = int.Parse(startValue[0]["canStartGame"]);
@@ -56,27 +58,47 @@ public class LoadSceneStart : MonoBehaviour
 
                 return;
             }
-        }, () => ErrorConnect()));
+        }
+        catch
+        {
+            ErrorConnect("Đã xảy ra lỗi, bạn hãy thử lại!");
+        }
     }
 
-    private void ErrorConnect()
+    IEnumerator loadTextOnline(string uri)
+    {
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
+        {
+            yield return webRequest.SendWebRequest();
+
+            if (webRequest.isNetworkError)
+            {
+                ErrorConnect("Hãy kiểm tra kết nối mạng và thử lại!");
+            }
+            else
+            {
+                downloadBundleScene(webRequest.downloadHandler.text);
+            }
+        }
+    }
+
+    private void ErrorConnect(string message)
     {
         updateText = false;
         notice.text = "";
 
-        popupStart.SetPopup("Hãy kiểm tra kết nối mạng và thử lại!");
+        popupStart.SetPopup(message);
         popupStart.SetActionForceUpdate((value) =>
         {
             if (value)
             {
                 updateText = true;
                 notice.text = "Đang tải game";
-                GetText();
+                StartCoroutine(loadTextOnline(urlGetScene));
             }
-            else
-            {
-                popupStart.gameObject.SetActive(false);
-            }
+
+            popupStart.gameObject.SetActive(false);
+            imgProcess.fillAmount = 0;
         });
     }
 
@@ -117,36 +139,39 @@ public class LoadSceneStart : MonoBehaviour
 
     private IEnumerator DownloadScene(string urlSceneBundle, string hash)
     {
-        UnityWebRequest request = UnityWebRequestAssetBundle.GetAssetBundle(urlSceneBundle, Hash128.Parse(hash), 0);
-        UnityWebRequestAsyncOperation operation = request.SendWebRequest();
+            imgProcess.fillAmount = 0.5f;
+            UnityWebRequest request = UnityWebRequestAssetBundle.GetAssetBundle(urlSceneBundle, Hash128.Parse(hash), 0);
+            UnityWebRequestAsyncOperation operation = request.SendWebRequest();
 
-        ulong totalBytes = 0;
-        while (!operation.isDone)
-        {
-            if (totalBytes == 0)
+            ulong totalBytes = 0;
+            while (!operation.isDone)
             {
-                string length = request.GetResponseHeader("Content-Length");
-                if (length != null)
+                if (totalBytes == 0)
                 {
-                    totalBytes = ulong.Parse(length);
+                    string length = request.GetResponseHeader("Content-Length");
+                    if (length != null)
+                    {
+                        totalBytes = ulong.Parse(length);
+                    }
                 }
+
+                imgProcess.fillAmount = (request.downloadProgress + 0.5f) / 2f;
+
+                yield return new WaitForEndOfFrame();
             }
+            AssetBundle assetBundle = DownloadHandlerAssetBundle.GetContent(request);
 
-            yield return new WaitForEndOfFrame();
-        }
-        AssetBundle assetBundle = DownloadHandlerAssetBundle.GetContent(request);
+            if (assetBundle.isStreamedSceneAssetBundle)
+            {
+                updateText = false;
+                notice.text = "Tải game hoàn tất";
 
-        if (assetBundle.isStreamedSceneAssetBundle)
-        {
-            updateText = false;
-            notice.text = "Tải game hoàn tất";
+                string[] scenePaths = assetBundle.GetAllScenePaths();
+                string sceneName = System.IO.Path.GetFileNameWithoutExtension(scenePaths[0]);
 
-            string[] scenePaths = assetBundle.GetAllScenePaths();
-            string sceneName = System.IO.Path.GetFileNameWithoutExtension(scenePaths[0]);
-
-            AsyncOperation async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName);
-            if (async == null)
-                yield break;
-        }
+                AsyncOperation async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName);
+                if (async == null)
+                    yield break;
+            }
     }
 }

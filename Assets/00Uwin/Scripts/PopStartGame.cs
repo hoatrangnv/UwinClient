@@ -8,11 +8,7 @@ public class PopStartGame : MonoBehaviour
     public GameObject objPopup;
     public Text txtNoticePopup;
     public Text txtNotice;
-    public Text txtTitle;
-
-
     public Button btGOUpdate;
-    public Button btClose;
 
     public string linkUpdate="";
 
@@ -21,7 +17,6 @@ public class PopStartGame : MonoBehaviour
     private void Start()
     {
         btGOUpdate.onClick.AddListener(ClickBtUpdate);
-        btClose.onClick.AddListener(ClickBtCancel);
     }
 
     public void SetPopup(string notice)
@@ -55,7 +50,7 @@ public class PopStartGame : MonoBehaviour
             ResultAction(true);
     }
 
-    private void ClickBtCancel()
+    public void ClickBtCancel()
     {
         if (ResultAction != null)
             ResultAction(false);
