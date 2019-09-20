@@ -11,7 +11,6 @@ using UnityEditor;
 
 public class AssetbundlesManager : MonoBehaviour
 {
-
     #region Properties
 
     public GameObject gDefaultProgress;
@@ -392,7 +391,6 @@ public class AssetbundlesManager : MonoBehaviour
             AssetBundle bundle = asset[assetBundleName];
             return bundle.LoadAsset(assetName, type);
         }
-
     }
 
 #if UNITY_EDITOR
