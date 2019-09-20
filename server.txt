@@ -1,1 +1,0 @@
-{"versionMin":3,"versionMax":4,"isMaintain":0,"linkUpdate":"https://ios.loc.red/","noticeMaintain":"1"}
