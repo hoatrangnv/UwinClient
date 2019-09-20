@@ -4,12 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class LoadSceneStart : MonoBehaviour {
-
+public class LoadSceneStart : MonoBehaviour
+{
     [SerializeField]
     private string urlGetScene;
     List<Dictionary<string, string>> startValue;
     public PopStartGame popupStart;
+
     void Start()
     {
         StartCoroutine(VKCommon.DownloadTextFromURL(urlGetScene, (value) =>
@@ -19,9 +20,12 @@ public class LoadSceneStart : MonoBehaviour {
             string hash = startValue[0]["hash"];
             int canStartGame = int.Parse(startValue[0]["canStartGame"]);
 
-            if(canStartGame == 1)
+            if (canStartGame == 1)
             {
-#if UNITY_ANDROID
+#if UNITY_EDITOR
+                string url = startValue[0]["urlWin"];
+                StartCoroutine(DownloadScene(url, hash));
+#elif UNITY_ANDROID
                 string url = startValue[0]["urlAndroid"];
                 StartCoroutine(DownloadScene(url, hash));
 #elif UNITY_IOS

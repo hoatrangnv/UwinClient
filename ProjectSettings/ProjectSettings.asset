@@ -242,7 +242,7 @@ PlayerSettings:
   templateDefaultScene: Assets/Scenes/SampleScene.unity
   AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 0
-  androidSplashScreen: {fileID: 2800000, guid: 0238deacdb9abda4db271c4993bf8bb6, type: 3}
+  androidSplashScreen: {fileID: 2800000, guid: 30daedd77fc746d44a4498e3ba6b356d, type: 3}
   AndroidKeystoreName: E:/Work/FREELANCE/NEW_JOB/UwinClient-Android/uwin2019.8.27.keystore
   AndroidKeyaliasName: uwin2019.5.16
   AndroidTVCompatibility: 1
