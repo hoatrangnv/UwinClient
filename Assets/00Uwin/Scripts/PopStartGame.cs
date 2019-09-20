@@ -8,6 +8,9 @@ public class PopStartGame : MonoBehaviour
     public GameObject objPopup;
     public Text txtNoticePopup;
     public Text txtNotice;
+    public Text txtTitle;
+
+
     public Button btGOUpdate;
     public string linkUpdate="";
 

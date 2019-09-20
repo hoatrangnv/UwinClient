@@ -593,6 +593,7 @@ public class VKCommon
     #region Download Text
     public static IEnumerator DownloadTextFromURL(string url, Action<string> action)
     {
+        Debug.Log("tai text" + url);
         var www = new WWW(url);
         string strCallback = "";
         yield return www;
