@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Newtonsoft.Json;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -6,26 +7,37 @@ using UnityEngine.Networking;
 public class LoadSceneStart : MonoBehaviour {
 
     [SerializeField]
-    private string urlSceneBundle;
-
-    private void Start()
+    private string urlGetScene;
+    List<Dictionary<string, string>> startValue;
+    public PopStartGame popupStart;
+    void Start()
     {
-     
-    }
+        StartCoroutine(VKCommon.DownloadTextFromURL(urlGetScene, (value) =>
+        {
+            startValue = JsonConvert.DeserializeObject<List<Dictionary<string, string>>>(value);
 
-    private string GetLinkDownloadBundle(string sceneBundleName)
-    {
-#if UNITY_WEBGL
-		return urlSceneBundle + "/WebGL/" + sceneBundleName;
-#elif UNITY_ANDROID
-        return urlSceneBundle + "/Android/" + sceneBundleName;
+            string hash = startValue[0]["hash"];
+            int canStartGame = int.Parse(startValue[0]["canStartGame"]);
+
+            if(canStartGame == 1)
+            {
+#if UNITY_ANDROID
+                string url = startValue[0]["urlAndroid"];
+                StartCoroutine(DownloadScene(url, hash));
 #elif UNITY_IOS
-		return urlSceneBundle + "/iOS/" + sceneBundleName;
-#else
-		return urlSceneBundle + "/" + sceneBundleName;
+                string url = startValue[0]["urlIOS"];
+                StartCoroutine(DownloadScene(url, hash));
 #endif
-    }
+            }
+            else
+            {
+                string message = startValue[0]["message"];
+                popupStart.SetNotice(message);
 
+                return;
+            }
+        }));
+    }
 
     private IEnumerator DownloadScene(string urlSceneBundle, string hash)
     {
@@ -47,11 +59,15 @@ public class LoadSceneStart : MonoBehaviour {
             yield return new WaitForEndOfFrame();
         }
         AssetBundle assetBundle = DownloadHandlerAssetBundle.GetContent(request);
-        string[] allsceneName = assetBundle.GetAllScenePaths();
 
-        foreach (var item in allsceneName)
+        if (assetBundle.isStreamedSceneAssetBundle)
         {
+            string[] scenePaths = assetBundle.GetAllScenePaths();
+            string sceneName = System.IO.Path.GetFileNameWithoutExtension(scenePaths[0]);
 
+            AsyncOperation async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName);
+            if (async == null)
+                yield break;
         }
     }
 }
