@@ -94,12 +94,7 @@ public class Database : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
-
         currentGame = GameId.NONE;
-
-        // Seting device
-        Application.runInBackground = true;
-        Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
         string data = VKFileHelper.LoadTextFromFile(_fileLocalName);
 

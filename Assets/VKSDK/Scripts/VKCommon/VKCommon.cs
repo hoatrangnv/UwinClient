@@ -591,9 +591,8 @@ public class VKCommon
     #endregion
 
     #region Download Text
-    public static IEnumerator DownloadTextFromURL(string url, Action<string> action)
+    public static IEnumerator DownloadTextFromURL(string url, Action<string> action, Action error = null)
     {
-        Debug.Log("tai text" + url);
         var www = new WWW(url);
         string strCallback = "";
         yield return www;
@@ -602,19 +601,19 @@ public class VKCommon
             if (string.IsNullOrEmpty(www.text) || !string.IsNullOrEmpty(www.error))
             {
                 VKDebug.LogError("Download image failed " + www.error);
+                error.Invoke();
             }
             else
             {
                 strCallback = www.text;
+                if (action != null)
+                    action.Invoke(strCallback);
             }
         }
         catch (Exception e)
         {
             VKDebug.LogError("Download image failed: " + e.Message);
         }
-
-        if (action != null)
-            action.Invoke(strCallback);
     }
     #endregion
 }
