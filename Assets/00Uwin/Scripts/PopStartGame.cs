@@ -12,6 +12,8 @@ public class PopStartGame : MonoBehaviour
 
 
     public Button btGOUpdate;
+    public Button btClose;
+
     public string linkUpdate="";
 
     private System.Action<bool> ResultAction;
@@ -19,6 +21,7 @@ public class PopStartGame : MonoBehaviour
     private void Start()
     {
         btGOUpdate.onClick.AddListener(ClickBtUpdate);
+        btClose.onClick.AddListener(ClickBtCancel);
     }
 
     public void SetPopup(string notice)
