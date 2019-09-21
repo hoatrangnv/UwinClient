@@ -163,6 +163,8 @@ public class LoadSceneStart : MonoBehaviour
 
             if (assetBundle.isStreamedSceneAssetBundle)
             {
+                imgProcess.fillAmount = 100;
+
                 updateText = false;
                 notice.text = "Tải game hoàn tất";
 
