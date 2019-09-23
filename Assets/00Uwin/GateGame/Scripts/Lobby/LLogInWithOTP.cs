@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LLogInWithOTP : UILayer
+public class  LLogInWithOTP : UILayer
 {
     [Space(40)]
     public Button btClose;
