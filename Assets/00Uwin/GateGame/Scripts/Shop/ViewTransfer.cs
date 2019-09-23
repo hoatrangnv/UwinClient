@@ -93,7 +93,7 @@ public class ViewTransfer : AbsShop
                         if (balance > 0)
                         {
 
-                            LPopup.OpenPopupTop("Thông báo", "Chuyển Thành công");
+                            LPopup.OpenPopupTop("Thông báo", "Chuyển tiền thành công");
                             Database.Instance.UpdateUserGold(balance);
                         }
                         else
@@ -105,7 +105,7 @@ public class ViewTransfer : AbsShop
                     }
                     else
                     {
-                        LPopup.OpenPopupTop("Thông báo", "Lỗi kết nôi! Hãy kiểm tra lại");
+                        LPopup.OpenPopupTop("Thông báo", "Lỗi kết nối! Hãy kiểm tra lại");
                     }
                     break;
                 }

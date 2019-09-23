@@ -282,8 +282,11 @@ public class LViewLobby : UILayer
     private void ClickBtLogout()
     {
         Database.Instance.islogin = false;
+
         objHeadLogined.SetActive(false);
+
         objHeadPrepareLogin.SetActive(true);
+
         ObjAllSetting.SetActive(false);
         UILayerController.Instance.GotoLogin();
         lobbyController.LogoutSuccess();

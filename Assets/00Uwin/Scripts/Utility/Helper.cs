@@ -9,6 +9,8 @@ public static class Helper
     {
         {-1, "Mã xác nhận đã hết thời gian sử dụng!"},
         {-2, "Mã xác nhận không chính xác!"},
+        {-3, "Số điện thoại mới trùng với số điện thoại cũ!"},
+        {-4, "Số điện thoại này đã được kích hoạt sử dụng trước đó!"},
         {-10, "Thẻ này không được hệ thống chấp nhận"},
         {-11, "Bạn đã hết số lượt quay trong ngày"},
         {-13, "Thông tin thẻ không chính xác hoặc đã được sử dụng"},
@@ -25,7 +27,7 @@ public static class Helper
         {-53, "Định dạng email chưa đúng"},
         {-54, "Định dạng số điện thoại di động chưa đúng"},
         {-55, "Giftcode không hợp lệ hãy kiểm tra lại"},
-        {-56, "Giftcode không chính xác hãy kiểm tra lại"},
+        {-56, "Giftcode đã được sử dụng hãy kiểm tra lại"},
         {-57, "Tên tài khoản đã tồn tại"},
         {-58, "Tên tài khoản không tồn tại"},
         {-60, "Mã OTP không chính xác, vui lòng kiểm tra lại!"},
@@ -40,6 +42,7 @@ public static class Helper
         {-100, "Loại thẻ này không chính xác"},
         {-101, " Xin vui lòng đợi hệ thống duyệt thẻ"},
         {-102, " Xin vui lòng đăng ký số điện thoại"},
+        {-1000, " Số tiền chuyển tối thiểu phải là 100.000đ"},
         { 0,    "Xin vui lòng đợi trong ít phút, thẻ đang được duyệt"},
     };
 

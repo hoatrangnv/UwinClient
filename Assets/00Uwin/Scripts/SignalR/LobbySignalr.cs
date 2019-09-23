@@ -9,8 +9,10 @@ public class LobbySignalr : MonoBehaviour
     public string _URL;
     public string _HUBNAME;
 
-    private LobbySignalRServer _server;
+    public XLuaBehaviour xlua;
+    public LobbyController lobbyController { get; set; }
 
+    private LobbySignalRServer _server;
     #region Sinleton
     private static LobbySignalr instance;
 
@@ -28,9 +30,12 @@ public class LobbySignalr : MonoBehaviour
     #endregion
 
     #region UnityMethod
-    void OnDisable()
+    void OnApplicationQuit()
     {
-        SignalRController.Instance.CloseServer(_GAMEID);
+        if (Database.Instance.islogin)
+        {
+            SignalRController.Instance.CloseServer(_GAMEID);
+        }
     }
     #endregion
 
@@ -53,6 +58,9 @@ public class LobbySignalr : MonoBehaviour
                 break;
             case SRSConst.UPDATE_MONEY_LOBBY:
                 HandleUpdateMoneyLobby(datas);
+                break;
+            case SRSConst.KICK_USER:
+                HandleKickUser(datas);
                 break;
         }
     }
@@ -98,13 +106,28 @@ public class LobbySignalr : MonoBehaviour
 
     public void HandleEnterLobby(object[] data)
     {
-
     }
 
     public void HandleUpdateMoneyLobby(object[] data)
     {
         Database.Instance.UpdateUserGold(new MAccountInfoUpdateGold((double)data[0]));
         LPopup.OpenPopupTop("Thông báo", data[1].ToString());
+    }
+
+    public void HandleKickUser(object[] data)
+    {
+        LPopup.OpenPopupTop("Thông báo", "Tài khoản của bạn đã được đăng nhập từ một nơi khác, hãy khởi động lại game để tiếp tục!",
+        (value) =>
+        {
+            Application.Quit();
+        }, false);
+
+        //DestroyImmediate(gameObject.transform.Find("Controller"));
+        //DestroyImmediate(gameObject.transform.Find("LuaManager"));
+        //SignalRController.Instance.CloseServer(4);
+
+        //xlua.InvokeXLua("ClickBtLogout");
+        //UnityEngine.SceneManagement.SceneManager.LoadScene("Start");
     }
 
     #endregion

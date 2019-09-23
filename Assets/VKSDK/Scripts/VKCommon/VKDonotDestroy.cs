@@ -1,9 +1,5 @@
 ﻿using UnityEngine;
 
-public class VKDonotDestroy : MonoBehaviour
+public class VKDonotDestroy : MonoSingleton<VKDonotDestroy>
 {
-    void Awake()
-    {
-        DontDestroyOnLoad(this.transform);
-    }
 }

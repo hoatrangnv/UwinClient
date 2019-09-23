@@ -198,9 +198,8 @@ public class LGameTaiXiu : UILayer
         base.HideLayer();
 
         WebServiceController.Instance.OnWebServiceResponse -= OnWebServiceResponse;
-        //        _server.HubCallHideSlot();
+        //_server.HubCallHideSlot();
         SignalRController.Instance.CloseServer((int)_GAMEID);
-
         MenuMiniGame.Instance.InitTaiXiu();
         ClearUI();
     }

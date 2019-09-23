@@ -586,6 +586,7 @@ GameObject:
   - component: {fileID: 114306499892315702}
   - component: {fileID: 114401019268246380}
   - component: {fileID: 114414928587173890}
+  - component: {fileID: 114942061676644974}
   m_Layer: 5
   m_Name: LViewLobby
   m_TagString: Untagged
@@ -17156,6 +17157,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!114 &114942061676644974
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1140330865263546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33cb45c88b8ce648bc0933cfa6a442f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _GAMEID: -1
+  _URL: https://api.loc.red/signalr/negotiate/
+  _HUBNAME: lobbygame
+  xlua: {fileID: 114414928587173890}
 --- !u!114 &114943020006125696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -21535,7 +21551,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 272}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224324087409782406
 RectTransform:
@@ -23191,10 +23207,10 @@ RectTransform:
   m_Father: {fileID: 224506345235773060}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 19}
-  m_SizeDelta: {x: 705, y: 241}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224582535800172246
 RectTransform:

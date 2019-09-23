@@ -97,8 +97,12 @@
     public const string BUY_MANUAL = "buyManual";
 
     //Sam send
+
+
     //Lobby
     public const string UPDATE_MONEY_LOBBY = "updateMoney";
+    public const string KICK_USER = "KickUser";
+
 }
 
 public class SRSCallConsts

@@ -97,6 +97,14 @@ public class LobbySignalRServer : ISignalRServer
             OnSRSHubEvent.Invoke(SRSConst.UPDATE_MONEY_LOBBY, msg.Arguments);
         }
     }
+
+    protected void HubKickUser(Hub hub, MethodCallMessage msg)
+    {
+        if (OnSRSHubEvent != null)
+        {
+            OnSRSHubEvent.Invoke(SRSConst.KICK_USER, msg.Arguments);
+        }
+    }
     #endregion
 
     #region Hub Send method
@@ -119,6 +127,8 @@ public class LobbySignalRServer : ISignalRServer
         base.RegisterHubFunction();
         _hub.On("EnterLobby", HubEnterLobby);
         _hub.On("UpdateMoneyLobby", HubUpdateMoney);
+        _hub.On("KickUser", HubKickUser);
+
     }
     #endregion
 }

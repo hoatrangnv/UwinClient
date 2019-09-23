@@ -5,94 +5,94 @@
       {
         "gid": 0,
         "name": "main-xlua.bundle",
-        "hash": "02b62ac99399fafa8334b1edb5d710f1n"
+        "hash": "02b62ac99399fafa8334b1edb5d710f10"
       },										 
       {											 
         "gid": 0,								 
         "name": "gate.bundle",					 
-        "hash": "1927b15c999f28c0d3e863ccc14b247cn"
+        "hash": "1927b15c999f28c0d3e863ccc14b247c0"
       },										 
       {											 
         "gid": 0,								 
         "name": "pl.bundle",					 
-        "hash": "1f6fe99c2969ed2f6977591177ab3d37n"
+        "hash": "1f6fe99c2969ed2f6977591177ab3d370"
       },										
       {											
         "gid": 0,								
         "name": "common.bundle",				
-        "hash": "f63e0153914926863c478b9b26294837n"
+        "hash": "f63e0153914926863c478b9b262948370"
       },										 
       {											 
         "gid": 0,								 
         "name": "xlua.bundle",					 
-        "hash": "e7960c2349fb96932b7b9d5b90a56c17n"
+        "hash": "e7960c2349fb96932b7b9d5b90a56c170"
       }											 
     ],											 
     "asset": [									 
       {											 
         "gid": 1,								 
         "name": "slotnongtrai.bundle",			 
-        "hash": "dd7257623699ab36bcab469a3a1a539dn"
+        "hash": "dd7257623699ab36bcab469a3a1a539d0"
       },										 
       {											 
         "gid": 2,								 
         "name": "slotmafia.bundle",				 
-        "hash": "937dd8f651992bb326f194b33251717dn"
+        "hash": "937dd8f651992bb326f194b33251717d0"
       },										 
       {											 
         "gid": 3,								 
         "name": "haivuong.bundle",				 
-        "hash": "3f6ca91769296513f49f336338c485b6n"
+        "hash": "3f6ca91769296513f49f336338c485b60"
       },										
       {											
         "gid": 8,								
         "name": "minipoker.bundle",				
-        "hash": "17c93bcb9913a66a029c316f506f7946n"
+        "hash": "17c93bcb9913a66a029c316f506f79460"
       },										
       {											
         "gid": 5,								
         "name": "highlow.bundle",				
-        "hash": "5a81329e9b65b97e349ef31bcdebbe8an"
+        "hash": "5a81329e9b65b97e349ef31bcdebbe8a0"
       },										
       {											
         "gid": 6,								
         "name": "vuabao.bundle",				
-        "hash": "b8e6ae6d9b96db22e9426229ea941aa0n"
+        "hash": "b8e6ae6d9b96db22e9426229ea941aa00"
       },										 
       {											 
         "gid": 4,								 
         "name": "taixiu.bundle",				 
-        "hash": "de9842e69e9dcc14ba93a60b10078c09n"
+        "hash": "de9842e69e9dcc14ba93a60b10078c090"
       },										 
       {											 
         "gid": 9,								 
         "name": "baucua.bundle",				 
-        "hash": "616b1a477fa964991c9d4e5072bd8191n"
+        "hash": "616b1a477fa964991c9d4e5072bd81910"
       },										 
       {											 
         "gid": 101,								 
         "name": "luckyspin.bundle",				 
-        "hash": "5c2907cd2e89b3699139b22750c3610dn"
+        "hash": "5c2907cd2e89b3699139b22750c3610d0"
       },										 
       {											 
         "gid": 102,								 
         "name": "xocxoc.bundle",				 
-        "hash": "3e055e30b1393f939860925c14fadd6bn"
+        "hash": "3e055e30b1393f939860925c14fadd6b0"
       },										 
       {											 
         "gid": 103,								 
         "name": "bacay.bundle",					 
-        "hash": "349d1e2a8e71c595339932057d735a67n"
+        "hash": "349d1e2a8e71c595339932057d735a670"
       },										
 	  {											
         "gid": 105,								
         "name": "tlmn.bundle",					
-        "hash": "265d7c9f213579c2b93ff9125205c422n"
+        "hash": "265d7c9f213579c2b93ff9125205c4220"
       },										
 	  {											
         "gid": 104,								
         "name": "sam.bundle",					
-        "hash": "59b163fb3a29abd9efa99165dd30c81an"
+        "hash": "59b163fb3a29abd9efa99165dd30c81a0"
       }											
     ]
   }
