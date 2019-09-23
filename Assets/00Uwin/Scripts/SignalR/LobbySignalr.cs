@@ -119,16 +119,13 @@ public class LobbySignalr : MonoBehaviour
         LPopup.OpenPopupTop("Thông báo", "Tài khoản của bạn đã được đăng nhập từ một nơi khác, hãy khởi động lại game để tiếp tục!",
         (value) =>
         {
+#if UNITY_WEBGL
+            Application.OpenURL("https://loc777.net");
+#else
             Application.Quit();
+#endif
         }, false);
-
-        //DestroyImmediate(gameObject.transform.Find("Controller"));
-        //DestroyImmediate(gameObject.transform.Find("LuaManager"));
-        //SignalRController.Instance.CloseServer(4);
-
-        //xlua.InvokeXLua("ClickBtLogout");
-        //UnityEngine.SceneManagement.SceneManager.LoadScene("Start");
     }
 
-    #endregion
+#endregion
 }
