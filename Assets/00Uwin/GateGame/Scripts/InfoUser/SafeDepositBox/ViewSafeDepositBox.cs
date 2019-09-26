@@ -143,13 +143,13 @@ public class ViewSafeDepositBox : AbsInfoUser
         }
         catch
         {
-            LPopup.OpenPopupTop("Thông báo!", "Sai định dạng");
+            LPopup.OpenPopupTop("Thống báo!", "Sai định dạng");
             return;
         }
 
         if (quanity < 10000)
         {
-            LPopup.OpenPopupTop("Thông báo!", "Phải lớn hơn 10000");
+            LPopup.OpenPopupTop("Thống báo!", "Phải lớn hơn 10000");
             return;
         }
 
@@ -174,19 +174,19 @@ public class ViewSafeDepositBox : AbsInfoUser
         }
         catch
         {
-            LPopup.OpenPopupTop("Thông báo!", "Nội dung nhập phải là số");
+            LPopup.OpenPopupTop("Thống báo!", "Nội dung nhập phải là số");
             return;
         }
 
         if (otp.Length < 1)
         {
-            LPopup.OpenPopupTop("Thông báo!", "Cần nhập OTP");
+            LPopup.OpenPopupTop("Thống báo!", "Cần nhập OTP");
             return;
         }
 
         if (quanity < 10000)
         {
-            LPopup.OpenPopupTop("Thông báo!", "Gửi két tối thiểu là 10.000 Gold");
+            LPopup.OpenPopupTop("Thống báo!", "Gửi két tối thiểu là 10.000 Gold");
             return;
         }
 

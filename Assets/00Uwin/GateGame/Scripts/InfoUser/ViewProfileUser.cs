@@ -55,29 +55,24 @@ public class ViewProfileUser : AbsInfoUser
         base.Reload();
         WebServiceController.Instance.OnWebServiceResponse += OnWebServiceResponse;
 
-        MAccountInfo account = Database.Instance.Account();
-
         // Info Left
-        txtNameUser.text = account.DisplayName;
-        txtDateJoinGame.text = account.Time;
+        txtNameUser.text = Database.Instance.Account().DisplayName;
+        txtDateJoinGame.text = Database.Instance.Account().Time;
 
         // Info Right
-        SetGold(account.Gold);
-        SetCoin(account.Coin);
+        SetGold(Database.Instance.Account().Gold);
+        SetCoin(Database.Instance.Account().Coin);
 
-        txtNameAcount.text = account.Username.Substring(0, account.Username.Length - 4) + "xxxx";
-        txtIdAcount.text = account.AccountID.ToString();
-
-        string phoneNumber = "";
-        switch (Database.Instance.Account().State)
+        txtNameAcount.text = Database.Instance.Account().Username.Substring(0, Database.Instance.Account().Username.Length - 4) + "xxxx";
+        txtIdAcount.text = Database.Instance.Account().AccountID.ToString();
+        if (!Database.Instance.Account().IsRegisterPhone())
         {
-            case -1:     phoneNumber = "Đăng ký lại"; break;
-            case  0:     phoneNumber = "Chưa đăng ký"; break;
-            case  1:     phoneNumber = account.GetTel(); break;
-            case  2:     phoneNumber = "Chờ xác nhận"; break;
+            txtPhoneNumber.text = "Chưa đăng kí";
         }
-
-        txtPhoneNumber.text = phoneNumber;
+        else
+        {
+            txtPhoneNumber.text = Database.Instance.Account().GetTel();
+        }
         
         if (!Database.Instance.Account().IsRegisterPhone())
         {

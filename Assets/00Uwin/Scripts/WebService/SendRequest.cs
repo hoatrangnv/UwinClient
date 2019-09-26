@@ -110,17 +110,6 @@ public class SendRequest
         WebServiceController.Instance.SendRequest(WebServiceCode.Code.UpdatePhoneNumber, data, HTTPMethods.Get);
     }
 
-    public static void SendRegisterPhone(string phone)
-    {
-        RegisterPhoneTelegram data = new RegisterPhoneTelegram
-        {
-            phoneNumber = phone,
-            deviceToken = UnityEngine.SystemInfo.deviceUniqueIdentifier
-    };
-
-        WebServiceController.Instance.SendRequest(WebServiceCode.Code.RegisterPhoneTelegram, data, HTTPMethods.Get);
-    }
-
     public static void SendUpdateAvatar(int id)
     {
         SUpdateAvatar data = new SUpdateAvatar

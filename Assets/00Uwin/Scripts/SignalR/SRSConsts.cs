@@ -102,7 +102,6 @@
     //Lobby
     public const string UPDATE_MONEY_LOBBY = "updateMoney";
     public const string KICK_USER = "KickUser";
-    public const string UPDATE_PHONE_SUCCESS = "CheckPhoneTelegram";
 
 }
 

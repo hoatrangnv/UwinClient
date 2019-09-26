@@ -9,7 +9,6 @@ public enum IndexViewInforUser
     SECURIRY = 1,
     SAFE_DEPOSIT_BOX = 2,
     VIP = 3,
-    Telegram = 4,
 }
 
 public class LViewInfoUser : UILayer
@@ -22,7 +21,7 @@ public class LViewInfoUser : UILayer
 
     public Transform transParentMain;
 
-    public AbsInfoUser[] listViewInfoUser = new AbsInfoUser[5];
+    public AbsInfoUser[] listViewInfoUser = new AbsInfoUser[4];
 
     // Parameter
     [HideInInspector]
@@ -117,10 +116,6 @@ public class LViewInfoUser : UILayer
                         break;
                     }
                 case (int)IndexViewInforUser.SECURIRY:
-                    {
-                        break;
-                    }
-                case (int)IndexViewInforUser.Telegram:
                     {
                         break;
                     }

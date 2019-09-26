@@ -503,8 +503,6 @@ public class WebServiceController : MonoBehaviour
 
             case WebServiceCode.Code.UpdatePhoneNumber:
                 return urlApiPortal + "/Security/UpdatePhoneNumber";
-            case WebServiceCode.Code.RegisterPhoneTelegram:
-                return urlApiPortal + "/Account/ValidatePhone";
             //IAP
             case WebServiceCode.Code.GetCustomerCares:
                 return urlApiPortal + "/Agency/GetAll";
