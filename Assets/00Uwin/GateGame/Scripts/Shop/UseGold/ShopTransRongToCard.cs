@@ -258,7 +258,7 @@ public class ShopTransRongToCard : AbsShop
         string notice = "Ban có chắc chắn muốn đổi thẻ {0} {1} với giá {2} vàng";
         notice = string.Format(notice, nameCard, VKCommon.ConvertStringMoney(quantityCard), VKCommon.ConvertStringMoney(quantityRong));
 
-        LPopup.OpenPopupTop("Thống báo", notice, (value) => { RequestDoiThuong(value); }, true);
+        LPopup.OpenPopupTop("Thông báo", notice, (value) => { RequestDoiThuong(value); }, true);
     }
 
     private void RequestDoiThuong(bool isAccept)
