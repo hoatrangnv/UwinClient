@@ -176,6 +176,24 @@ public class SUpdatePhone : BaseRequest
         return s;
     }
 }
+public class RegisterPhoneTelegram : BaseRequest
+{
+    public string phoneNumber;
+    public string deviceToken;
+
+    public override void AddData(HTTPRequest request)
+    {
+        request.AddField("phoneNumber", phoneNumber);
+        request.AddField("deviceToken", deviceToken);
+    }
+
+    public override string GetData()
+    {
+        string s = "?Phone=" + phoneNumber;
+        s += "&deviceToken=" + deviceToken;
+        return s;
+    }
+}
 
 public class SUpdateAvatar : BaseRequest
 {

@@ -62,6 +62,9 @@ public class LobbySignalr : MonoBehaviour
             case SRSConst.KICK_USER:
                 HandleKickUser(datas);
                 break;
+            case SRSConst.UPDATE_PHONE_SUCCESS:
+                HandleUpdatePhone(datas);
+                break;
         }
     }
 
@@ -114,6 +117,7 @@ public class LobbySignalr : MonoBehaviour
         LPopup.OpenPopupTop("Thông báo", data[1].ToString());
     }
 
+
     public void HandleKickUser(object[] data)
     {
         LPopup.OpenPopupTop("Thông báo", "Tài khoản của bạn đã được đăng nhập từ một nơi khác, hãy khởi động lại game để tiếp tục!",
@@ -127,5 +131,11 @@ public class LobbySignalr : MonoBehaviour
         }, false);
     }
 
-#endregion
+    public void HandleUpdatePhone(object[] data)
+    {
+        LPopup.OpenPopupTop("Thông báo", "Cập nhật SĐT thành công, bạn có thể nhận OTP từ Telegram!");
+        //Database.Instance.aco
+    }
+
+    #endregion
 }

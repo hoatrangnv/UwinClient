@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System;
+using System.Diagnostics;
 
 #region Base
 [System.Serializable]
@@ -41,6 +42,7 @@ public class MAccountInfo
     public bool IsOTP;
     public string CreatedTime;
     public string Tel;
+    public int State;
 
     public double GetCurrentBalance(int type)
     {
@@ -58,14 +60,17 @@ public class MAccountInfo
 
     public bool IsRegisterPhone()
     {
-        if (string.IsNullOrEmpty(Tel))
-        {
-            return false;
-        }
-        else
-        {
-            return true;
-        }
+        return this.State == 1 ? true : false;
+
+        //if (this.State == 0 ||) return false;
+        //if (string.IsNullOrEmpty(Tel))
+        //{
+        //    return false;
+        //}
+        //else
+        //{
+        //    return true;
+        //}
     }
 
     public string GetTel()

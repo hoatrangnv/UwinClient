@@ -21,6 +21,7 @@ public class WebServiceCode {
         //TestReceiveOTP,
         //TestReceiveLoginOTP,
         UpdatePhoneNumber,
+        RegisterPhoneTelegram,
         ForgetPass,
 
         // Bank
