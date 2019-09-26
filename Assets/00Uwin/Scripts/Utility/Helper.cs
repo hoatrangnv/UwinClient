@@ -69,7 +69,7 @@ public static class Helper
             return true;
         }
 
-        LPopup.OpenPopupTop("Thông Báo!", "Vui lòng kiểm tra kết nối internet của bạn");
+        LPopup.OpenPopupTop("Thống Báo!", "Vui lòng kiểm tra kết nối internet của bạn");
 
         return false;
     }

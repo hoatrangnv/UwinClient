@@ -12,7 +12,7 @@ public class ElementTopJackPot : MonoBehaviour
     [HideInInspector]
     public GameObject mObj;
 
-    public List<string> listNameGame = new List<string>() { "Panda", "Thần tài", "Tam Quốc", "Xúc sắc", "Cá đại dương", "Cá đại dương", "Cá đại dương", "MiniPoker" };
+    public List<string> listNameGame = new List<string>() { "Panda", "Thần tài", "Tam Quốc", "Xúc sắc", "Cá đại dương", "Cao Thấp", "Cá đại dương", "MiniPoker" };
 
     private TypeTopJackpot typeJackpot;
     private double betEnd = 0;

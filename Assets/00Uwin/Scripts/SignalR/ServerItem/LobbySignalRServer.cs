@@ -105,14 +105,6 @@ public class LobbySignalRServer : ISignalRServer
             OnSRSHubEvent.Invoke(SRSConst.KICK_USER, msg.Arguments);
         }
     }
-
-    protected void SuccessOTP(Hub hub, MethodCallMessage msg)
-    {
-        if (OnSRSHubEvent != null)
-        {
-            OnSRSHubEvent.Invoke(SRSConst.UPDATE_PHONE_SUCCESS, msg.Arguments);
-        }
-    }
     #endregion
 
     #region Hub Send method
@@ -121,6 +113,11 @@ public class LobbySignalRServer : ISignalRServer
     {
         _hub.Call("EnterLobby", (int)gameID);
     }
+
+    //public void HubCallUpdateMoneyLobby()
+    //{
+    //    _hub.Call("UpdateMoneyLobby");
+    //}
 
     #endregion
 
@@ -131,7 +128,7 @@ public class LobbySignalRServer : ISignalRServer
         _hub.On("EnterLobby", HubEnterLobby);
         _hub.On("UpdateMoneyLobby", HubUpdateMoney);
         _hub.On("KickUser", HubKickUser);
-        _hub.On("CheckPhoneTelegram", SuccessOTP);
+
     }
     #endregion
 }

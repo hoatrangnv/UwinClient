@@ -243,7 +243,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: E:/Work/FREELANCE/NEW_JOB/Loc777-Android/uwin2019.8.27.keystore
+  AndroidKeystoreName: E:/Work/FREELANCE/NEW_JOB/UwinClient-Android/uwin2019.8.27.keystore
   AndroidKeyaliasName: uwin2019.5.16
   AndroidTVCompatibility: 1
   AndroidIsGame: 1

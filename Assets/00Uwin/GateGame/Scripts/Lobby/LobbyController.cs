@@ -82,6 +82,7 @@ public class LobbyController : MonoBehaviour
                 if (status == WebServiceStatus.Status.OK)
                 {
                     MSignUpResponse mSignUp = JsonUtility.FromJson<MSignUpResponse>(data);
+
                     if (mSignUp.Code == 1 || mSignUp.Code == 2)
                     {
                         Database.Instance.SetAccountInfo(mSignUp.Account);
@@ -99,7 +100,7 @@ public class LobbyController : MonoBehaviour
                 }
                 else
                 {
-                    LPopup.OpenPopupTop("Thông Báo!", "Kiem tra kết nối");
+                    LPopup.OpenPopupTop("Thống Báo!", "Kiem tra kết nối");
                 }
                 break;
             case WebServiceCode.Code.LoginOTP:
