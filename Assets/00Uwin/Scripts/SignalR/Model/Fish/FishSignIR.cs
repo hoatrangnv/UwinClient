@@ -63,7 +63,15 @@ public class FishSignIR : MonoBehaviour
                 {
                     UILayerController.Instance.HideLoading();
                     fishAccount = JsonConvert.DeserializeObject<FAccountResponse>(res);
-                    OpenApp(responseData);
+
+                    if(fishAccount != null)
+                    {
+                        OpenApp(responseData);
+                    }
+                    else
+                    {
+                        LPopup.OpenPopupTop("Thông báo", "Đã xảy ra lỗi vui lòng thử lại!");
+                    }
                 }));
             }));
         }

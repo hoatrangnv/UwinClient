@@ -37,11 +37,22 @@ public class ViewSecurityUser : AbsInfoUser
     public Button btGetOTP;
     public InputField inputFieldOTP;
 
+    [Header("Wait Active Phone")]
+    public Text phoneNumber;
+    public GameObject objWaitActive;
+
+    [Header("Wait Reactive Phone")]
+    public Text phoneNumberRA;
+    public GameObject objWaitReactive;
+    public Button btnReactive;
+    public InputField inputFieldPhoneReactive;
+
     public int goldGetOTP = 1000;
 
     private bool isRequestActiveSecurity = false;
     private bool isRequestsGetOTPFisrt = false;
     private bool isUpdatePhoneFisrt = false;
+    private bool isUpdatePhoneTelegram = false;
 
     #region Implement
 
@@ -62,6 +73,7 @@ public class ViewSecurityUser : AbsInfoUser
         btClosePanelOTP.onClick.AddListener(ClickBtClosePanelOTP);
         btRequestDeleleActiveSecurity.onClick.AddListener(ClickBtRequestDeleteActiveSecurity);
         btGetOTP.onClick.AddListener(ClickBtGetOTP);
+        btnReactive.onClick.AddListener(ClickBtReactivePhone);
     }
 
     public override void Reload()
@@ -73,20 +85,56 @@ public class ViewSecurityUser : AbsInfoUser
         inputFieldOTPPhoneNew.text = "";
         txtPhoneOld.text = "";
 
-        if (Database.Instance.Account().IsRegisterPhone())
-        {
-            objPhoneUpdated.SetActive(true);
-            objPhoneUpdateFisrt.SetActive(false);
+        MAccountInfo accountInfo = Database.Instance.Account();
 
-            txtPhoneOld.text = Database.Instance.Account().GetTel();
-        }
-        else
+        switch (accountInfo.State)
         {
-            objPhoneUpdated.SetActive(false);
-            objPhoneUpdateFisrt.SetActive(true);
+            case 0:
+                {
+                    objPhoneUpdateFisrt.SetActive(true);
+
+                    objPhoneUpdated.SetActive(false);
+                    objWaitActive.SetActive(false);
+                    objWaitReactive.SetActive(false);
+
+                    break;
+                }
+            case 1:
+                {
+                    objPhoneUpdated.SetActive(true);
+
+                    objPhoneUpdateFisrt.SetActive(false);
+                    objWaitActive.SetActive(false);
+                    objWaitReactive.SetActive(false);
+
+                    txtPhoneOld.text = accountInfo.GetTel();
+                    break;
+                }
+            case -1:
+                {
+                    objWaitReactive.SetActive(true);
+
+                    objPhoneUpdated.SetActive(false);
+                    objPhoneUpdateFisrt.SetActive(false);
+                    objWaitActive.SetActive(false);
+
+                    phoneNumberRA.text = accountInfo.GetTel();
+                    break;
+                }
+            case 2:
+                {
+                    objWaitActive.SetActive(true);
+
+                    objPhoneUpdated.SetActive(false);
+                    objPhoneUpdateFisrt.SetActive(false);
+                    objWaitReactive.SetActive(false);
+
+                    phoneNumber.text = accountInfo.GetTel();
+                    break;
+                }
         }
 
-        isRequestActiveSecurity = Database.Instance.Account().IsOTP;
+        isRequestActiveSecurity = accountInfo.IsOTP;
 
         ChangeSecuritySucceed();
         objPanelOTPSecurity.SetActive(false);
@@ -116,6 +164,19 @@ public class ViewSecurityUser : AbsInfoUser
                     if (Helper.CheckResponseSuccess(opCode))
                     {
                         ChangePhoneSucceed();
+                    }
+                }
+                break;
+            case WebServiceCode.Code.RegisterPhoneTelegram:
+                UILayerController.Instance.HideLoading();
+
+                if (Helper.CheckStatucSucess(status))
+                {
+                    var opCode = int.Parse(data);
+
+                    if (Helper.CheckResponseSuccess(opCode))
+                    {
+                        ChangePhoneTelegramSucceed();
                     }
                 }
                 break;
@@ -164,17 +225,35 @@ public class ViewSecurityUser : AbsInfoUser
 
     }
 
+    private void ClickBtReactivePhone()
+    {
+        UILayerController.Instance.ShowLoading();
+
+        if (string.IsNullOrEmpty(inputFieldPhoneReactive.text))
+        {
+            LPopup.OpenPopupTop("Thông báo", "Hãy nhập số điện thoại");
+            return;
+        }
+
+        SendRequest.SendRegisterPhone(inputFieldPhoneReactive.text);
+
+        //SendRequest.SendUpdatePhone(inputFieldPhoneUpdateFisrt.text, inputFiedOTPUnUpdateFisrt.text);
+        AudioAssistant.Instance.Shot(StringHelper.SOUND_GATE_BT);
+    }
+
     private void ClickBtRequestPhoneFisrt()
     {
         UILayerController.Instance.ShowLoading();
 
-        if (string.IsNullOrEmpty(inputFieldPhoneUpdateFisrt.text) || string.IsNullOrEmpty(inputFiedOTPUnUpdateFisrt.text))
+        if (string.IsNullOrEmpty(inputFieldPhoneUpdateFisrt.text))
         {
-            LPopup.OpenPopupTop("Thông báo", "Hãy nhập đầy đủ thông tin gồm số điện thoại và mã OTP");
+            LPopup.OpenPopupTop("Thông báo", "Hãy nhập số điện thoại");
             return;
         }
 
-        SendRequest.SendUpdatePhone(inputFieldPhoneUpdateFisrt.text, inputFiedOTPUnUpdateFisrt.text);
+        SendRequest.SendRegisterPhone(inputFieldPhoneUpdateFisrt.text);
+
+        //SendRequest.SendUpdatePhone(inputFieldPhoneUpdateFisrt.text, inputFiedOTPUnUpdateFisrt.text);
         AudioAssistant.Instance.Shot(StringHelper.SOUND_GATE_BT);
         isUpdatePhoneFisrt = true;
     }
@@ -225,7 +304,6 @@ public class ViewSecurityUser : AbsInfoUser
 
         }
         AudioAssistant.Instance.Shot(StringHelper.SOUND_GATE_BT);
-
     }
 
     private void ChangeToggleActiveSecurityLogin(bool value)
@@ -261,15 +339,32 @@ public class ViewSecurityUser : AbsInfoUser
 
     #region Method
 
+    private void ChangePhoneTelegramSucceed()
+    {
+        Database.Instance.Account().Tel = inputFieldPhoneUpdateFisrt.text;
+        Database.Instance.Account().State = 2;
+        inputFiedOTPUnUpdateFisrt.text = "";
+
+        objWaitActive.SetActive(true);
+
+        objPhoneUpdated.SetActive(false);
+        objPhoneUpdateFisrt.SetActive(false);
+        objWaitReactive.SetActive(false);
+
+        phoneNumber.text = Database.Instance.Account().GetTel();
+    }
+
     private void ChangePhoneSucceed()
     {
         if (isUpdatePhoneFisrt)
         {
+            //tao phone moi
             Database.Instance.Account().Tel = inputFieldPhoneUpdateFisrt.text;
             inputFiedOTPUnUpdateFisrt.text = "";
         }
         else
         {
+            //doi so dien thoai
             Database.Instance.Account().Tel = inputFieldPhoneNew.text;
             inputFieldPhoneNew.text = "";
             inputFieldOTPPhoneNew.text = "";
@@ -332,7 +427,6 @@ public class ViewSecurityUser : AbsInfoUser
         UILayerController.Instance.ShowLoading();
         SendRequest.SendUpdateRegisterSmsPlus(false);
         isRequestActiveSecurity = true;
-
     }
 
     private void ClickBtDisableSecurityLogin()
