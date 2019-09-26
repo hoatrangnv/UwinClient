@@ -9389,6 +9389,7 @@ MonoBehaviour:
   - {fileID: 1883512244671372, guid: 310841bd4635b7148969e899bb1935cd, type: 2}
   - {fileID: 1137947182888032, guid: c9e1c07200abbd44faa28f59715ec379, type: 2}
   - {fileID: 1605411394034550, guid: 04052cd108fdd56429f31849fdc6eb26, type: 2}
+  - {fileID: 1341070533236138, guid: 2e814c1cc7ee96f4caf8def6c3143cc0, type: 2}
   listObjLoadShop:
   - {fileID: 0}
   listObjUseGold:
@@ -17171,6 +17172,7 @@ MonoBehaviour:
   _GAMEID: -1
   _URL: https://api.loc.red/signalr/negotiate/
   _HUBNAME: lobbygame
+  LThongBao: {fileID: 1341070533236138, guid: 2e814c1cc7ee96f4caf8def6c3143cc0, type: 2}
   xlua: {fileID: 114414928587173890}
 --- !u!114 &114943020006125696
 MonoBehaviour:

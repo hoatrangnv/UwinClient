@@ -63,7 +63,8 @@ local IndexSourceGate =
 	LFSendMoney = 12,
 	LFInfo = 13,
 	LFReceiveMoney = 14,
-	LVipPoint = 15
+	LVipPoint = 15,
+	LThongBao = 16
 }
 
 local objHeadPrepareLogin

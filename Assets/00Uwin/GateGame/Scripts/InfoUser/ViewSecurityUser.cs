@@ -341,7 +341,8 @@ public class ViewSecurityUser : AbsInfoUser
 
     private void ChangePhoneTelegramSucceed()
     {
-        Database.Instance.Account().Tel = inputFieldPhoneUpdateFisrt.text;
+        string tel = Database.Instance.Account().State == 0 ? inputFieldPhoneUpdateFisrt.text : inputFieldPhoneReactive.text;
+        Database.Instance.Account().Tel = tel;
         Database.Instance.Account().State = 2;
         inputFiedOTPUnUpdateFisrt.text = "";
 

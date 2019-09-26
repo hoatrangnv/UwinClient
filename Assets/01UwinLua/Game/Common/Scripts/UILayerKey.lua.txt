@@ -32,6 +32,7 @@ local UILayerKey =
     LGameSlot20LinePopup = "LGameSlot20LinePopup",
     LGameSlot20LineBonus = "LGameSlot20LineBonus",
     LGameSlot20LineStatistic = "LGameSlot20LineStatistic",
+	LThongBao = "LThongBao",
 
 	LFSendMoney = "LFSendMoney",
 	LFInfo = "LFInfo",

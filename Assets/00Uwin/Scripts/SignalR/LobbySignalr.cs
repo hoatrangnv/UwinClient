@@ -9,6 +9,8 @@ public class LobbySignalr : MonoBehaviour
     public string _URL;
     public string _HUBNAME;
 
+    public GameObject LThongBao;
+
     public XLuaBehaviour xlua;
     public LobbyController lobbyController { get; set; }
 
@@ -30,6 +32,14 @@ public class LobbySignalr : MonoBehaviour
     #endregion
 
     #region UnityMethod
+
+    private void Awake()
+    {
+        if (!PlayerPrefs.HasKey("Telegram"))
+        {
+            PlayerPrefs.SetInt("Telegram", 1);
+        }
+    }
     void OnApplicationQuit()
     {
         if (Database.Instance.islogin)
@@ -41,6 +51,11 @@ public class LobbySignalr : MonoBehaviour
 
     public void ConnectLobby()
     {
+        if (PlayerPrefs.GetInt("Telegram") == 1)
+        {
+            UILayerController.Instance.ShowLayer(UILayerKey.LThongBao, this.LThongBao);
+        }
+
         _server = SignalRController.Instance.CreateServer<LobbySignalRServer>(_GAMEID);
         _server.OnSRSEvent = OnSRSEvent;
         _server.OnSRSHubEvent = OnSRSHubEvent;
@@ -134,7 +149,8 @@ public class LobbySignalr : MonoBehaviour
     public void HandleUpdatePhone(object[] data)
     {
         LPopup.OpenPopupTop("Thông báo", "Cập nhật SĐT thành công, bạn có thể nhận OTP từ Telegram!");
-        //Database.Instance.aco
+        Database.Instance.Account().Tel = data[0].ToString();
+        Database.Instance.Account().State = 1;
     }
 
     #endregion

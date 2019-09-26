@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -83,7 +84,6 @@ public class LShop : UILayer
     {
         Close();
         AudioAssistant.Instance.Shot(StringHelper.SOUND_GATE_BT);
-
     }
 
     private void AddEventTogget()
@@ -159,6 +159,4 @@ public class LShop : UILayer
             }
         }
     }
-
-
 }
